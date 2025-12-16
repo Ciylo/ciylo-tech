@@ -1,26 +1,245 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00C9A7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00836b;
+}
+/* -------------------------- */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.specialities-swiper .swiper-pagination-bullet {
+  display: none;
+}
+.swiper-wrapper{
+  padding: 24px 0 !important;
+}
+.specialities-swiper {
+  overflow: visible !important;
+}
+.specialities-swiper .swiper-wrapper {
+  overflow: visible !important;
+}
+.specialities-swiper .swiper-slide {
+  overflow: visible !important;
+  height: auto !important;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, width;
+}
+
+.specialities-swiper .swiper-slide.is-hovered {
+  z-index: 30;
+}
+
+.smooth-transition {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.speciality-hover-card {
+  width: 100%;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: width;
+}
+
+.speciality-hover-card.is-hovered {
+  width: calc(100% + 12rem);
+}
+.main-btn {
+  background: linear-gradient(to right, #22bb9c, #35debc);
+  color: #fff !important;
+  width: auto;
+  height: 42px;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none !important;
+}
+.main-btn:hover {
+  background: linear-gradient(to right, #35debc, #22bb9c);
+  color: #fff !important;
+}
+
+.ant-btn,
+.ant-tabs {
+  font-family: "Inter", sans-serif;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  /* display: none; */
+  /* background-color: #e00000; */
+  display: none;
+}
+.ant-tabs{
+  flex-direction: row;
+  gap: 10px!important;
+}
+
+.ant-tabs-tab {
+  height: auto !important;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px !important;
+  justify-content: start;
+  font-weight: 500 !important;
+  color: #8a8a8a !important;
+
+  font-size: 14px !important;
+}
+
+.ant-tabs-nav-wrap {
+  width: 100% !important;
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+  margin: 0px !important;
+  width: 100% !important;
+  padding: 0px 16px !important;
+  border-radius: 0;
+  margin-bottom: 0px !important;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.ant-tabs-nav-list {
+  width: 100%;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  gap: 8px !important;
+  flex-direction: column;
+}
+
+.ant-tabs-tab-active {
+  width: 100% !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid #fff;
+  .ant-tabs-tab-btn {
+    color: #000000 !important;
+    font-weight: 600 !important;
+  }
+}
+
+
+
+/* Shift adjacent slides when one is hovered */
+.specialities-swiper .swiper-slide[data-slide-index] {
+  transform: translateX(0);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Calculate shift for slides after hovered slide */
+.specialities-swiper .swiper-slide.is-hovered ~ .swiper-slide {
+  transform: translateX(12rem);
+}
+
+
+
+/* Smooth image appearance animation */
+@keyframes imageAppear {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 12rem;
+    opacity: 1;
+  }
+}
+
+@keyframes imageAppearMd {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 14rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-image-appear {
+  animation: imageAppear 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+}
+
+@media (min-width: 768px) {
+  .speciality-hover-card.is-hovered {
+    width: calc(100% + 14rem);
+  }
+  .specialities-swiper .swiper-slide.is-hovered ~ .swiper-slide {
+    transform: translateX(14rem);
+  }
+  .animate-image-appear {
+    animation: imageAppearMd 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
 }
