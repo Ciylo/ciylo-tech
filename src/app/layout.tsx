@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "ciyloTech | Turning Your Ideas Into Scalable Digital Products – Web, Mobile & User-Centered Software Solutions",
+    "CiyloTech | Turning Your Ideas Into Scalable Digital Products – Web, Mobile & User-Centered Software Solutions",
   description:
     "ciyloTech is a software development company that specializes in turning your ideas into scalable digital products. We are a team of experienced developers who are dedicated to providing the best possible solutions for our clients.",
   icons: {
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex relative min-h-screen flex-col">
+        <div className="flex relative min-h-screen overflow-hidden w-full flex-col">
           <Header />
           <main className="flex-1 pt-24">{children}</main>
           <Footer />
