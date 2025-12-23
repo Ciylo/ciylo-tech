@@ -1,5 +1,5 @@
 "use client";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -82,10 +82,10 @@ const testimonialsData: Testimonial[] = [
 
 export default function HappyClients() {
   return (
-    <>
-      <section className="2xl:py-16 md:py-16 py-12">
-        <div className="container mx-auto px-4">
-          <h5 className="text-[48px] mb-12 font-semibold text-center text-[#000000] leading-none">
+    <>``
+      <section className="2xl:pb-16 md:pt-10 pt-4 md:pb-16 pb-8 2xl:px-0 md:px-16 px-6">
+        <div className="container mx-auto md:px-4">
+          <h5 className="md:text-[48px] text-[28px] mb-2 md:mb-12 font-semibold text-center text-[#000000] leading-none">
             Hear from Our{" "}
             <span className="text-[#00C9A7] font-bold">Happy Clients</span>.
           </h5>
@@ -107,15 +107,19 @@ export default function HappyClients() {
                 spaceBetween: 40,
               },
               1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
+                slidesPerView: 3,
+                spaceBetween: 30,
               },
               1536: {
                 slidesPerView: 3.3,
                 spaceBetween: 50,
               },
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             className="happy-clients-swiper"
           >
             {testimonialsData.map((testimonial) => (

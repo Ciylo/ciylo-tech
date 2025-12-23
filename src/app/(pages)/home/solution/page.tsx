@@ -48,19 +48,20 @@ export default function SolutionWay() {
   };
 
   return (
-    <section className="2xl:py-16 md:py-16 py-12">
+    <section className="2xl:pb-16 md:pt-10 pt-8 md:pb-16 pb-8 2xl:px-0 md:px-16 px-6">
       <div className="container mx-auto">
-        <h5 className="text-[48px] mb-12 font-semibold text-center text-[#000000] leading-none">
+        <h5 className="md:text-[48px] text-[28px] mb-6 md:mb-12 font-semibold text-center text-[#000000] leading-none">
           The Way We{" "}
           <span className="text-[#00C9A7] font-bold">Solve</span>.
         </h5>
-        <div className="bg-white home-tabs border border-[#E0E0E0] rounded-3xl mb-12 p-12">
-          <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+        <div className="bg-white home-tabs border border-[#E0E0E0] rounded-3xl md:mb-12 mb-6 md:p-12 p-6">
+          <Tabs defaultActiveKey="1" items={items}  onChange={onChange} />
         </div>
         <div className="flex justify-center">
         <Button
           icon={<Icon icon="formkit:arrowright" />}
           iconPlacement="end"
+          href="/how-work"
           type="default"
           className="main-btn mt-3 rounded-full! text-lg! font-semibold!"
         >

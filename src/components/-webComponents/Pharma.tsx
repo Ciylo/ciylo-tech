@@ -58,10 +58,10 @@ export default function Pharma() {
     <>
       {cardData.map((card, index) => (
         <div key={index}>
-          <div className="border p-12 pe-2! mb-12 rounded-3xl! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
-            <Row gutter={24} align="middle">
-              <Col md={12}>
-                <div className="flex flex-col items-start gap-7">
+          <div className="border md:p-12 md:pe-2! p-6 md:mb-12 mb-6 md:rounded-3xl! rounded-lg! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
+            <Row gutter={[24,16]} align="middle">
+              <Col md={12} xs={24}>
+                <div className="flex flex-col items-start 2xl:gap-7 gap-4">
                   <div className="w-auto h-12">
                     <Image
                       src={card.logo}
@@ -72,24 +72,24 @@ export default function Pharma() {
                       unoptimized
                     />
                   </div>
-                  <h6 className="text-[32px] font-bold text-[#424242]">
+                  <h6 className="2xl:text-[32px] md:text-2xl text-xl font-bold text-[#424242]">
                     {card.title}
                   </h6>
-                  <p className="text-base text-black line-clamp-4 select-text">
+                  <p className="2xl:text-base md:text-sm text-xs text-black line-clamp-4 select-text">
                     {card.description}
                   </p>
                   <Button
                     icon={<Icon icon="formkit:arrowright" />}
                     iconPlacement="end"
                     type="default"
-                    className="main-btn mt-3 rounded-full! text-lg! font-semibold!"
+                    className="main-btn md:mt-3 rounded-full! 2xl:text-lg md:text-base text-sm! font-semibold!"
                   >
                     Read the case study
                   </Button>
                 </div>
               </Col>
-              <Col md={12}>
-                <div className="w-auto h-[550px] rounded-md! ">
+              <Col md={12} xs={24}>
+                <div className="w-auto 2xl:h-[550px] md:h-[250px] h-[150px] rounded-md! ">
                   <Image
                     src={card.image}
                     alt={card.title}

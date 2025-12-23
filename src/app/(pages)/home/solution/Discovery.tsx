@@ -61,37 +61,37 @@ export default function Discovery() {
   return (
     <>
       <div className="border-b mb-8 border-[#00C9A7]">
-        <h6 className="text-[28px] font-bold mb-1 text-[#111013]">
+        <h6 className="md:text-[28px] text-xl font-bold mb-1 text-[#111013]">
           Discovery
         </h6>
       </div>
       {/* --------------- */}
-      <div className="grid grid-cols-3 mb-10 gap-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 mb-10 gap-8">
         {discoverySteps.map((step) => (
           <div key={step.id} className="flex flex-col">
-            <div className="w-15 h-15 mb-5 flex items-center justify-center rounded-full bg-[#C0F6ED80]">
-              <Icon icon={step.icon} className="text-4xl text-[#111013]" />
+            <div className="md:w-15 md:h-15 w-10 h-10 mb-5 flex items-center justify-center rounded-full bg-[#C0F6ED80]">
+              <Icon icon={step.icon} className="md:text-4xl text-2xl text-[#111013]" />
             </div>
-            <h6 className="text-lg mb-2 font-bold text-[#111013]">
+            <h6 className="md:text-lg text-base mb-2 font-bold text-[#111013]">
               {step.title}
             </h6>
-            <div className="text-[16px] max-w-md font-normal text-[#161519]">
+            <div className="md:text-[16px] text-sm max-w-md font-normal text-[#161519]">
               {step.description}
             </div>
           </div>
         ))}
       </div>
       {/* --------------- */}
-      <div className="bg-[#E9FFFB] rounded-xl p-10 flex gap-6">
-        <div className="h-[268px] w-[268px] shrink-0 flex items-center justify-center">
-          <Icon icon="heroicons:chart-bar-square" className="text-[200px] text-[#00C9A7] opacity-30" />
+      <div className="bg-[#E9FFFB] md:rounded-xl rounded-lg md:p-10 p-6 items-center md:items-start flex flex-col md:flex-row md:gap-6 gap-4">
+        <div className="md:h-[268px] md:w-[268px] h-[150px] w-[150px] shrink-0 flex items-center justify-center">
+          <Icon icon="heroicons:chart-bar-square" className="md:text-[200px] text-[160px] text-[#00C9A7] opacity-30" />
         </div>
         <div className="flex flex-col gap-5 flex-1">
-          <p className="text-[16px] font-normal text-[#161519]">
+          <p className="md:text-[16px] text-sm font-normal text-[#161519]">
             Discovery phase is progressing excellently with comprehensive research and strategic planning well underway
           </p>
           <div className="flex flex-col gap-1">
-            <h6 className="text-[16px] font-bold text-[#111013]">
+            <h6 className="md:text-[16px] text-sm font-bold text-[#111013]">
               Research & Strategy
             </h6>
             {/* ----------progress bar---------- */}

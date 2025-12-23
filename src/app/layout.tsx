@@ -37,10 +37,10 @@ export default function RootLayout({
       >
         <div className="flex relative min-h-screen overflow-hidden w-full flex-col">
           <Header />
-          <main className="flex-1 pt-24">{children}</main>
+          <main className="flex-1 md:pt-24 overflow-x-hidden w-full pt-18">{children}</main>
           <Footer />
           <div className="absolute z-[-1] right-0 top-0 ">
-            <div className="w-[563px] 2xl:h-[756px] md:h-[500px] h-[300px] ">
+            <div className="md:w-[563px] 2xl:w-[483px] 2xl:h-[756px] md:h-[500px] w-[200px] h-[200px] ">
               <img
                 src="/images/mainFrame-logo.svg"
                 alt="logo"

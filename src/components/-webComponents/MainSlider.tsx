@@ -2,7 +2,7 @@
 import { Button, Col, Row } from "antd";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type CardData = {
   id: number;
@@ -41,6 +41,26 @@ const cardData: CardData[] = [
 
 function MainSlider() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [isPaused, setIsPaused] = useState<boolean>(false);
+
+  // Auto-advance slider every 5 seconds
+  useEffect(() => {
+    if (!isPaused) {
+      intervalRef.current = setInterval(() => {
+        setActiveIndex((prevIndex) => {
+          const nextIndex = prevIndex === cardData.length - 1 ? 0 : prevIndex + 1;
+          return nextIndex;
+        });
+      }, 5000); // 5 seconds interval
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [isPaused]);
 
   const getSlidePositionClass = (index: number): string => {
     const lastIndex = cardData.length - 1;
@@ -62,7 +82,11 @@ function MainSlider() {
   };
 
   return (
-    <div className="swipe-container min-h-[520px] relative">
+    <div
+      className="swipe-container 2xl:min-h-[520px] md:min-h-[500px] 2xl:px-0 md:px-16 px-6 min-h-[550px] relative"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="rev_slider">
         {cardData.map((card, index) => (
           <div
@@ -71,9 +95,9 @@ function MainSlider() {
             onClick={() => handleCardClick(index)}
           >
             <div className="swipe-card">
-              <Row gutter={24} align="middle">
+              <Row gutter={[24,24]} align="middle">
                 <Col md={10}>
-                  <div className="flex flex-col items-start gap-7">
+                  <div className="flex flex-col items-start gap-4 md:gap-7">
                     <div className="w-auto h-11">
                       <Image
                         src={card.logo}
@@ -84,24 +108,24 @@ function MainSlider() {
                         unoptimized
                       />
                     </div>
-                    <h6 className="text-[32px] font-bold text-[#424242]">
+                    <h6 className="md:text-[32px] text-xl font-bold text-[#424242]">
                       {card.title}
                     </h6>
-                    <p className="text-base text-black line-clamp-4 select-text">
+                    <p className="md:text-base text-sm text-black line-clamp-4 select-text">
                       {card.description}
                     </p>
                     <Button
                       icon={<Icon icon="formkit:arrowright" />}
                       iconPlacement="end"
                       type="default"
-                      className="main-btn mt-3 rounded-full! text-lg! font-semibold!"
+                      className="main-btn md:mt-3 rounded-full! md:text-lg text-base! font-semibold!"
                     >
                       Read the case study
                     </Button>
                   </div>
                 </Col>
                 <Col md={14}>
-                  <div className="w-auto rounded-md! h-[338px]">
+                  <div className="w-auto rounded-md! md:h-[338px] h-[200px]">
                     <Image
                       src={card.image}
                       alt={card.title}

@@ -78,9 +78,9 @@ export default function Specialities() {
   };
 
   return (
-    <section className="2xl:py-16 md:py-16 py-12">
-      <div className="container mx-auto 2xl:px-0 md:px-16 px-10">
-        <h5 className="text-[48px] font-semibold text-center text-[#000000] leading-none mb-3">
+    <section className="2xl:py-16 md:py-16 pt-12 pb-8">
+      <div className="container mx-auto 2xl:px-0 md:px-16 px-6">
+        <h5 className="md:text-[48px] text-[28px] font-semibold text-center text-[#000000] leading-none md:mb-3">
           What we&apos;re really{" "}
           <span className="text-[#00C9A7] font-bold">good at</span>.
         </h5>
@@ -129,11 +129,11 @@ export default function Specialities() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div
-                    className={`${service.bgColor} hover:bg-[#C0F6ED40] rounded-3xl p-6 md:p-6 h-full smooth-transition group cursor-pointer overflow-visible relative border border-[#E0E0E0] speciality-hover-card ${isActive ? "is-hovered" : ""}`}
+                    className={`${service.bgColor} hover:bg-[#C0F6ED40] rounded-3xl p-6 md:pe-0! md:p-6 h-full smooth-transition group cursor-pointer overflow-visible relative border border-[#E0E0E0] speciality-hover-card ${isActive ? "is-hovered" : ""}`}
                   >
-                    <div className="flex flex-row items-center gap-6 h-full">
-                      <div className="flex-1 min-w-0">
-                        <div className="size-15 mb-9">
+                    <div className="flex md:flex-row flex-col items-center md:gap-6 gap-4 h-full">
+                      <div className="flex-1 min-w-0 md:pe-6">
+                        <div className="md:size-15 size-10 md:mb-9 mb-6">
                           <Image
                             src={service.icon}
                             alt={service.title}
@@ -142,7 +142,7 @@ export default function Specialities() {
                             className="size-full object-contain"
                           />
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-[#212121] mb-3">
+                        <h3 className="text-lg md:text-2xl font-bold text-[#212121] mb-3">
                           {service.title}
                         </h3>
                         <p className="text-xs md:text-[14px] text-[#4B5563] leading-relaxed">
@@ -175,6 +175,7 @@ export default function Specialities() {
         <Button
           icon={<Icon icon="formkit:arrowright" />}
           iconPlacement="end"
+          href="/services"
           type="default"
           className="main-btn mt-3 rounded-full! text-lg! font-semibold!"
         >

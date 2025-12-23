@@ -38,29 +38,29 @@ export default function InitialConsultation() {
   return (
     <>
       <div className="border-b mb-8 border-[#00C9A7]">
-        <h6 className="text-[28px] font-bold mb-1 text-[#111013]">
+        <h6 className="md:text-[28px] text-[20px] font-bold mb-1 text-[#111013]">
           Initial consultation
         </h6>
       </div>
       {/* --------------- */}
-      <div className="grid grid-cols-3 mb-10 gap-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 md:mb-10 mb-6 md:gap-8 gap-4">
         {reasons.map((reason) => (
           <div key={reason.id} className="flex flex-col">
-            <div className="w-15 h-15 mb-5 flex items-center justify-center  rounded-full bg-[#C0F6ED80] ">
-              <Icon icon={reason.icon} className="text-4xl text-[#111013]" />
+            <div className="md:w-15 md:h-15 w-10 h-10 mb-5 flex items-center justify-center  rounded-full bg-[#C0F6ED80] ">
+              <Icon icon={reason.icon} className="md:text-4xl text-[20px] text-[#111013]" />
             </div>
-            <h6 className="text-lg mb-2 font-bold text-[#111013]">
+            <h6 className="md:text-lg text-[16px] mb-2 font-bold text-[#111013]">
               {reason.title}
             </h6>
-            <div className="text-[16px] max-w-md font-normal text-[#161519]">
+            <div className="md:text-[16px] text-[14px] max-w-md font-normal text-[#161519]">
               {reason.description}
             </div>
           </div>
         ))}
       </div>
       {/* --------------- */}
-      <div className="bg-[#E9FFFB] rounded-xl p-10 flex  gap-6 ">
-        <div className="h-[268px] w-[268px]  shrink-0">
+      <div className="bg-[#E9FFFB] rounded-xl md:p-10 p-6 flex md:flex-row flex-col md:items-start items-center  gap-6 ">
+        <div className="md:h-[268px] md:w-[268px] w-[180px] h-[180px] shrink-0">
           <Image
             src="/images/initial-image.svg"
             alt="initial consultation"
@@ -70,12 +70,12 @@ export default function InitialConsultation() {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <p className="text-[16px] font-normal text-[#161519]">
+          <p className="md:text-[16px] font-normal text-[#161519]">
             Website & Mobile development is moving smoothly with steady progress
             toward completion
           </p>
           <div className="flex flex-col gap-1">
-            <h6 className="text-[16px] font-bold text-[#111013]">
+            <h6 className="md:text-[16px] font-bold text-[#111013]">
               Website & Mobile
             </h6>
             {/* ----------progress bar---------- */}

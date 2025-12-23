@@ -39,9 +39,9 @@ const CaseStudyPage = () => {
       <OurClients />
       <MainSlider />
       {/* ---------------------- */}
-      <section className="2xl:py-16 md:py-16 py-12">
+      <section className="2xl:py-16 md:py-16 2xl:px-0 md:px-16 px-6 py-12">
         <div className="container mx-auto">
-          <div className="flex justify-between">
+          <div className="flex 2xl:flex-row flex-col gap-4 justify-between">
             <div className="case-input">
               <Input
                 size="large"

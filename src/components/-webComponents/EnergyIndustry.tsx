@@ -38,14 +38,14 @@ export default function EnergyIndustry() {
           <div
             key={index}
           >
-            <div className="border p-12 pe-2! mb-12 rounded-3xl! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
-              <Row gutter={24} align="middle">
-                <Col md={12}>
-                  <div className="flex flex-col items-start gap-7">
-                    <h6 className="text-[32px] font-bold text-[#424242]">
+            <div className="border md:p-12 md:pe-2! p-6 md:mb-12 mb-6 md:rounded-3xl! rounded-lg! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
+              <Row gutter={[24,16]} align="middle">
+                <Col md={12} xs={24}>
+                  <div className="flex flex-col items-start 2xl:gap-7 gap-4">
+                    <h6 className="2xl:text-[32px] md:text-2xl text-xl font-bold text-[#424242]">
                       {card.title}
                     </h6>
-                    <p className="text-base text-black line-clamp-4 select-text">
+                    <p className="2xl:text-base md:text-sm text-xs text-black line-clamp-4 select-text">
                       {card.description}
                     </p>
                     <Button
@@ -57,14 +57,14 @@ export default function EnergyIndustry() {
                           className="text-white"
                         />
                       }
-                      className="bg-transparent! p-0! text-[16px]! font-semibold! border-none! shadow-none! text-[#212121]! hover:text-[#00C9A7]! "
+                      className="bg-transparent! p-0! 2xl:text-[16px] md:text-base text-sm! font-semibold! border-none! shadow-none! text-[#212121]! hover:text-[#00C9A7]! "
                     >
                       View all
                     </Button>
                   </div>
                 </Col>
-                <Col md={12}>
-                  <div className="w-auto h-[340px] rounded-md! ">
+                <Col md={12} xs={24}>
+                  <div className="w-auto 2xl:h-[340px] md:h-[250px] h-[150px] rounded-md! ">
                     <Image
                       src={card.image}
                       alt={card.title}

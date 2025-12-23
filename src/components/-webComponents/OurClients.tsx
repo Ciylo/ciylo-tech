@@ -66,7 +66,7 @@ export default function OurClients() {
   }, []);
 
   return (
-    <section className="2xl:py-16 md:py-16 py-12 bg-white overflow-hidden">
+    <section className="2xl:py-16 md:py-16 py-6 bg-white overflow-hidden">
       <div className="relative w-full overflow-hidden">
         <div
           ref={scrollRef}
@@ -75,26 +75,26 @@ export default function OurClients() {
         >
           <div
             data-set="first"
-            className="flex items-center gap-12 md:gap-16 2xl:gap-20 px-4 shrink-0"
+            className="flex items-center gap-12 md:gap-16 2xl:gap-24 px-4 shrink-0"
           >
             {clients.map((client, index) => (
               <div
                 key={`first-${index}`}
-                className="shrink-0 flex items-center justify-center"
+                className="shrink-0 flex items-center justify-center md:w-auto md:h-auto "
               >
                 <Image
                   src={client.image}
                   alt={client.name}
-                  width={180}
-                  height={64}
-                  className="h-full w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0"
+                  width={100}
+                  height={100}
+                  className="size-full object-contain grayscale transition-all duration-300 hover:grayscale-0"
                 />
               </div>
             ))}
           </div>
           <div
             data-set="second"
-            className="flex items-center gap-12 md:gap-16 2xl:gap-20 px-4 ps-12 shrink-0"
+            className="flex items-center gap-12 md:gap-16 2xl:gap-24 px-4 ps-12 shrink-0"
             aria-hidden="true"
           >
             {clients.map((client, index) => (
@@ -105,8 +105,8 @@ export default function OurClients() {
                 <Image
                   src={client.image}
                   alt={client.name}
-                  width={180}
-                  height={64}
+                  width={100}
+                  height={100}
                   className="h-full w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0"
                 />
               </div>
