@@ -27,7 +27,7 @@ const services: Service[] = [
     description:
       "Modern web apps built for scale Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
     icon: "/images/dev.svg",
-    image: "/images/iPhone13.svg",
+    image: "/images/webdev.svg",
     bgColor: "bg-white",
   },
   {
@@ -41,11 +41,11 @@ const services: Service[] = [
   },
   {
     id: 3,
-    title: "Web Development",
+    title: "SaaS Products",
     description:
-      "Modern web apps built for scale Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "Modern SaaS products built for scale Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
     icon: "/images/dev.svg",
-    image: "/images/iPhone13.svg",
+    image: "/images/saaas.svg",
     bgColor: "bg-white",
   },
   {
@@ -54,7 +54,7 @@ const services: Service[] = [
     description:
       "Modern web apps built for scale Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
     icon: "/images/dev.svg",
-    image: "/images/iPhone13.svg",
+    image: "/images/uiux-design.svg",
     bgColor: "bg-white",
   },
 ];
@@ -152,7 +152,7 @@ export default function Specialities() {
 
                       {isActive && (
                         <div className="w-0 md:w-0 animate-image-appear shrink-0 overflow-hidden">
-                          <div className="h-[338px] w-full">
+                          <div className="h-auto w-full">
                             <Image
                               src={service.image}
                               alt={service.title}
