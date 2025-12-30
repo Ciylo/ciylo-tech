@@ -51,9 +51,13 @@ export function Button({
     );
   }
 
-  const { type = "button", ...buttonProps } = props;
+  const { type = "button", ...buttonProps } = props as ButtonHTMLAttributes<HTMLButtonElement>;
   return (
-    <button className={computedClassName} type={type} {...buttonProps}>
+    <button
+      className={computedClassName}
+      type={type as "button" | "submit" | "reset" | undefined}
+      {...buttonProps}
+    >
       {children}
     </button>
   );
