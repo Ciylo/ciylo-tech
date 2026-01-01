@@ -42,7 +42,7 @@ export default function IndustriesPage() {
                Industries
                 </span>
               </div>
-              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl text-shadow-lg font-semibold text-[#000000] leading-none">
+              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl   font-semibold text-[#000000] leading-none">
                 {" "}
                 Discover the <br />
                 <span className="text-[#00C9A7] font-bold! ">Industries We Power</span>

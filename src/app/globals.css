@@ -386,3 +386,21 @@ ul,
     border-radius: 10px;
 }
 }
+
+/* Custom Radio Button Styles for Contact Form */
+.contact-radio .ant-radio-checked .ant-radio-inner {
+  border-color: #00C9A7 !important;
+  background-color: #00C9A7 !important;
+}
+
+.contact-radio .ant-radio-inner::after {
+  background-color: #00C9A7 !important;
+}
+
+.contact-radio .ant-radio:hover .ant-radio-inner {
+  border-color: #00C9A7 !important;
+}
+
+.contact-radio .ant-radio-checked::after {
+  border-color: #00C9A7 !important;
+}

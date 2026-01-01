@@ -15,22 +15,22 @@ const CaseStudyPage = () => {
     {
       key: "1",
       label: "Energy",
-      content: <Energy/>,
+      children: <Energy/>,
     },
     {
       key: "2",
       label: "Pharma",
-      content: <Pharma/>,
+      children: <Pharma/>,
     },
     {
       key: "3",
       label: "Health Care",
-      content: <div>Health Care</div>,
+      children: <div>Health Care</div>,
     },
     {
       key: "4",
       label: "Oil company",
-      content: <div>Oil company</div>,
+      children: <div>Oil company</div>,
     },
   ];
   return (
@@ -51,16 +51,8 @@ const CaseStudyPage = () => {
               />
             </div>
             <div className="case-tabs  px-3">
-              <Tabs activeKey={activeTab} onChange={setActiveTab}>
-                {tabs.map((tab) => (
-                  <Tabs.TabPane tab={tab.label} key={tab.key} />
-                ))}
-              </Tabs>
+              <Tabs activeKey={activeTab} onChange={setActiveTab} items={tabs} />
             </div>
-            {/* ------------tabs-content------- */}
-          </div>
-          <div className="tab-content xs:py-4 ">
-            {tabs.find((tab) => tab.key === activeTab)?.content}
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function HeroSection() {
                   Case Studies
                 </span>
               </div>
-              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl text-shadow-lg font-semibold text-[#000000] leading-none">
+              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl   font-semibold text-[#000000] leading-none">
                 {" "}
                 Explore Our <br />
                 <span className="text-[#00C9A7] font-bold! ">Case Studies</span>

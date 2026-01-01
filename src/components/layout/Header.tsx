@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import { Button, Drawer } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type NavItem = {
@@ -22,7 +22,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-
+  const router = useRouter();
   const showDrawer = () => {
     setOpen(true);
   };
@@ -84,7 +84,7 @@ export function Header() {
           </nav>
 
           <div className="md:block hidden">
-            <Button type="default" className="main-btn">
+            <Button onClick={() => router.push("/contact")} type="default" className="main-btn">
               Contact Us
             </Button>
           </div>
@@ -132,7 +132,7 @@ export function Header() {
           ))}
         </nav>
         <div className="md:hidden block">
-          <Button type="default" className="main-btn ">
+          <Button onClick={() => router.push("/contact")} type="default" className="main-btn ">
             Contact Us
           </Button>
         </div>

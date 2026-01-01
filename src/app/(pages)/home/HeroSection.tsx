@@ -9,7 +9,7 @@ export default function HeroSection() {
               <div className="w-7 h-[2px] rounded-full bg-[#00C9A7]" />
               <span className="text-xs font-bold text-black">Let&apos;s Start</span>
             </div>
-            <h5 className="text-[36px] 2xl:text-[96px] md:text-start text-center text-shadow-lg font-semibold text-[#000000] leading-none">
+            <h5 className="text-[36px] 2xl:text-[96px] md:text-[46px] md:leading-[60px] leading-none  md:text-start text-center   font-semibold text-[#000000] ">
               <span className="text-[#00C9A7] font-bold! ">Ciylo</span> Turns{" "}
               <br className="md:block hidden" />
               Your Idea Into <br className="md:block hidden" /> Business Success

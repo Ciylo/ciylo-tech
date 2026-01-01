@@ -155,7 +155,7 @@ export default function AboutPage() {
                 <div className="w-7 h-[2px] rounded-full bg-[#00C9A7]" />
                 <span className="2xl:text-xs md:text-sm text-xs font-bold text-black">About Us</span>
               </div>
-              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl text-shadow-lg font-semibold text-[#000000] leading-none">
+              <h5 className="2xl:text-[66px] md:text-[46px] text-3xl   font-semibold text-[#000000] leading-none">
                 {" "}
                 We Build <br className="2xl:block md:block hidden" />
                 Products <br className="2xl:block md:block hidden" />
