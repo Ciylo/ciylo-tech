@@ -3,9 +3,11 @@ import { Button, Col, Row } from "antd";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 type CardData = {
   id: number;
+  slug: string;
   logo: string;
   title: string;
   description: string;
@@ -15,6 +17,7 @@ type CardData = {
 const cardData: CardData[] = [
   {
     id: 1,
+    slug: "binford-ltd",
     logo: "/images/fireside.svg",
     title: "Fire Side Ciylo Copy",
     description:
@@ -23,6 +26,7 @@ const cardData: CardData[] = [
   },
   {
     id: 2,
+    slug: "acme-co",
     logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&q=90",
     title: "FinTech Banking Platform",
     description:
@@ -31,6 +35,7 @@ const cardData: CardData[] = [
   },
   {
     id: 3,
+    slug: "barone-llc",
     logo: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=200&fit=crop&q=90",
     title: "AI-Powered Analytics Dashboard",
     description:
@@ -40,6 +45,7 @@ const cardData: CardData[] = [
 ];
 
 function MainSlider() {
+  const router = useRouter();
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const [isPaused, setIsPaused] = useState<boolean>(false);
@@ -81,6 +87,11 @@ function MainSlider() {
     setActiveIndex(index);
   };
 
+  const handleReadMore = (slug: string, e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent the card click from firing
+    router.push(`/case-study/detail/${slug}`);
+  };
+
   return (
     <div
       className="swipe-container 2xl:min-h-[520px] md:min-h-[500px] 2xl:px-0 md:px-16 px-6 min-h-[550px] relative"
@@ -119,6 +130,7 @@ function MainSlider() {
                       iconPlacement="end"
                       type="default"
                       className="main-btn md:mt-3 rounded-full! md:text-lg text-base! font-semibold!"
+                      onClick={(e) => handleReadMore(card.slug, e)}
                     >
                       Read the case study
                     </Button>

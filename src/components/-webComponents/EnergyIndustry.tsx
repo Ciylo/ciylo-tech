@@ -1,42 +1,23 @@
+"use client";
 import { Icon } from "@iconify/react";
 import { Button, Col,  Row } from "antd";
 import Image from "next/image";
-type CardData = {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
+import { useRouter } from "next/navigation";
+import { getAllIndustryCards } from "@/data/industries";
+
+export default function EnergyIndustry() {
+  const router = useRouter();
+  const cardData = getAllIndustryCards();
+
+  const handleViewAll = (slug: string) => {
+    router.push(`/industries/details/${slug}`);
   };
 
-  const cardData: CardData[] = [
-    {
-      id: 1,
-      title: "Oil industry",
-      description:
-        "We help oil and energy companies tackle complex operational challenges through innovative technology, strategic design, and data-driven solutions. From exploration and production to distribution and management, our work optimizes processes, enhances safety, and drives measurable efficiency across the industry",
-      image: "/images/pipe_pipeline-20.svg",
-    },
-    {
-      id: 2,
-      title: "Health Care",
-      description:
-        "We help healthcare providers and organizations tackle complex operational challenges through innovative technology, strategic design, and data-driven solutions. From patient care and clinical workflows to administrative systems and data analytics, our work optimizes processes, enhances safety, and drives measurable efficiency across the industry",
-      image: "/images/undraw_medicine_hqqg 1.svg",
-    },
-    {
-      id: 3,
-      title: "Pharmaceutical",
-      description:
-        "We help pharmaceutical companies tackle complex operational challenges through innovative technology, strategic design, and data-driven solutions. From drug development and manufacturing to distribution and management, our work optimizes processes, enhances safety, and drives measurable efficiency across the industry",
-      image: "/images/undraw_medical-care_7m9g (1) 1.svg",
-    },
-  ];
-export default function EnergyIndustry() {
   return (
     <>
        {cardData.map((card, index) => (
           <div
-            key={index}
+            key={card.slug}
           >
             <div className="border md:p-12 md:pe-2! p-6 md:mb-12 mb-6 md:rounded-3xl! rounded-lg! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
               <Row gutter={[24,16]} align="middle">
@@ -58,6 +39,7 @@ export default function EnergyIndustry() {
                         />
                       }
                       className="bg-transparent! p-0! 2xl:text-[16px] md:text-base text-sm! font-semibold! border-none! shadow-none! text-[#212121]! hover:text-[#00C9A7]! "
+                      onClick={() => handleViewAll(card.slug)}
                     >
                       View all
                     </Button>

@@ -7,25 +7,49 @@ import GetStarted from "@/components/-webComponents/GetStarted";
 import EnergyIndustry from "@/components/-webComponents/EnergyIndustry";
 
 export default function IndustriesPage() {
-    const [activeTab, setActiveTab] = useState("1");
+    const [activeTab, setActiveTab] = useState("energy");
+    
+    // Stats data
+    const stats = [
+      {
+        slug: "projects-shipped",
+        value: "200+",
+        label: "Projects Shipped",
+        borderColor: "border-[#434343]",
+      },
+      {
+        slug: "years-running",
+        value: "6+",
+        label: "Years Running",
+        borderColor: "border-[#00C9A7]",
+      },
+      {
+        slug: "happy-clients",
+        value: "50+",
+        label: "Happy Clients",
+        borderColor: "border-[#434343]",
+      },
+    ];
+
+    // Tabs data
     const tabs = [
       {
-        key: "1",
+        slug: "energy",
         label: "Energy",
         content: <EnergyIndustry/>,
       },
       {
-        key: "2",
+        slug: "pharma",
         label: "Pharma",
         content: 'Pharma',
       },
       {
-        key: "3",
+        slug: "health-care",
         label: "Health Care",
         content: <div>Health Care</div>,
       },
       {
-        key: "4",
+        slug: "oil-company",
         label: "Oil company",
         content: <div>Oil company</div>,
       },
@@ -50,18 +74,19 @@ export default function IndustriesPage() {
             </div>
 
             <div className="flex 2xl:max-w-4xl justify-between  md:gap-0 gap-4 md:max-w-2xl max-w-full">
-              <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#434343] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">200+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Projects Shipped</span>
-              </div>
-              <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#00C9A7] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">6+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Years Running</span>
-              </div>
-              <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#434343] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">50+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Happy Clients</span>
-              </div>
+              {stats.map((stat) => (
+                <div
+                  key={stat.slug}
+                  className={`w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 ${stat.borderColor} h-full flex flex-col gap-1`}
+                >
+                  <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">
+                    {stat.value}
+                  </span>
+                  <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
             </div>
 
             <p className="2xl:text-2xl md:text-xl text-base 2xl:leading-relaxed md:leading-relaxed leading-normal font-light text-[#000000]">
@@ -89,14 +114,14 @@ export default function IndustriesPage() {
             <div className="case-tabs  px-3">
               <Tabs activeKey={activeTab} onChange={setActiveTab}>
                 {tabs.map((tab) => (
-                  <Tabs.TabPane tab={tab.label} key={tab.key} />
+                  <Tabs.TabPane tab={tab.label} key={tab.slug} />
                 ))}
               </Tabs>
             </div>
             {/* ------------tabs-content------- */}
           </div>
           <div className="tab-content xs:py-4 ">
-            {tabs.find((tab) => tab.key === activeTab)?.content}
+            {tabs.find((tab) => tab.slug === activeTab)?.content}
           </div>
         </div>
       </section>

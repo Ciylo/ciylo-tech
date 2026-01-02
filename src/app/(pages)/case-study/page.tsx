@@ -7,6 +7,8 @@ import { Input, Tabs } from "antd";
 import { Icon } from "@iconify/react/dist/iconify.cjs";
 import Energy from "@/components/-webComponents/Energy";
 import Pharma from "@/components/-webComponents/Pharma";
+import HealthCare from "@/components/-webComponents/HealthCare";
+import OilCompany from "@/components/-webComponents/OilCompany";
 import GetStarted from "@/components/-webComponents/GetStarted";
 
 const CaseStudyPage = () => {
@@ -25,12 +27,12 @@ const CaseStudyPage = () => {
     {
       key: "3",
       label: "Health Care",
-      children: <div>Health Care</div>,
+      children: <HealthCare/>,
     },
     {
       key: "4",
       label: "Oil company",
-      children: <div>Oil company</div>,
+      children: <OilCompany/>,
     },
   ];
   return (
@@ -41,7 +43,7 @@ const CaseStudyPage = () => {
       {/* ---------------------- */}
       <section className="2xl:py-16 md:py-16 2xl:px-0 md:px-16 px-6 py-12">
         <div className="container mx-auto">
-          <div className="flex md:flex-row flex-col gap-4 justify-between">
+          <div className="flex  flex-col gap-4 justify-between">
             <div className="case-input">
               <Input
                 size="large"

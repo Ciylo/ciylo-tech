@@ -18,7 +18,7 @@ export default function DecorativeImage({
 
   return (
     <div className="absolute z-[-1] right-0 top-0 ">
-      <div className="md:w-[563px] 2xl:w-[483px] 2xl:h-[756px] md:h-[500px] w-[200px] h-[200px] ">
+      <div className="md:w-[400px] 2xl:w-[483px] 2xl:h-[756px] md:h-[400px] w-[150px] h-[150px] ">
         <img
           src="/images/mainFrame-logo.svg"
           alt="logo"

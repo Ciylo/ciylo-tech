@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { getCaseStudiesByCategory } from "@/data/caseStudies";
 
-export default function Energy() {
+export default function OilCompany() {
   const router = useRouter();
-  const cardData = getCaseStudiesByCategory("energy");
+  const cardData = getCaseStudiesByCategory("oil");
 
   const handleCardClick = (slug: string) => {
     router.push(`/case-study/detail/${slug}`);
@@ -21,13 +21,14 @@ export default function Energy() {
             <Row gutter={[24, 16]} align="middle">
               <Col md={12} xs={24}>
                 <div className="flex flex-col items-start 2xl:gap-7 gap-4">
-                  <div className="w-auto h-auto">
+                  <div className="w-auto h-12">
                     <Image
                       src={card.logo}
                       alt={card.title}
                       width={100}
                       height={100}
                       className="size-full object-contain"
+                      unoptimized
                     />
                   </div>
                   <h6 className="2xl:text-[32px] md:text-2xl text-xl font-bold text-[#424242]">
@@ -48,13 +49,13 @@ export default function Energy() {
                 </div>
               </Col>
               <Col md={12} xs={24}>
-                <div className="w-auto 2xl:h-[550px] md:h-[250px] h-[150px] ">
+                <div className="w-auto 2xl:h-[550px] md:h-[250px] h-[150px] rounded-md! ">
                   <Image
                     src={card.image}
                     alt={card.title}
                     width={100}
                     height={100}
-                    className="rounded-md! object-cover size-full"
+                    className="rounded-md! object-cover size-full "
                     unoptimized
                   />
                 </div>
@@ -66,3 +67,4 @@ export default function Energy() {
     </>
   );
 }
+
