@@ -50,7 +50,7 @@ export default function ContactPage() {
                     icon="mdi:phone"
                     className="text-xl md:text-2xl shrink-0"
                   />
-                  <div className="text-sm md:text-base">+1012 3456 789</div>
+                  <div className="text-sm md:text-base">+923016475925</div>
                 </div>
                 <div className="flex items-center gap-4 md:gap-6">
                   <Icon
@@ -58,7 +58,7 @@ export default function ContactPage() {
                     className="text-xl md:text-2xl shrink-0"
                   />
                   <div className="text-sm md:text-base wrap-break-word">
-                    demo@gmail.com
+                  noraiz@ciylo.com
                   </div>
                 </div>
                 <div className="flex items-start gap-4 md:gap-6">
@@ -67,8 +67,8 @@ export default function ContactPage() {
                     className="text-xl md:text-2xl shrink-0 mt-1"
                   />
                   <div className="text-sm md:text-base">
-                    132 Dartmouth Street Boston, <br />
-                    Massachusetts 02156 United States
+                  17 J3 johar town <br />
+                    Lahore Pakistan
                   </div>
                 </div>
               </div>
