@@ -14,24 +14,33 @@ type PageProps = {
 
 export default async function CaseStudyDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  
+
   if (!slug) {
     notFound();
   }
-  
+
   const caseStudy = getCaseStudyBySlug(slug);
 
   if (!caseStudy) {
     notFound();
   }
 
-  const { title, subtitle, introduction, heroImage, allData, coreFeatures, relatedWork, links } = caseStudy;
+  const {
+    title,
+    subtitle,
+    introduction,
+    heroImage,
+    allData,
+    coreFeatures,
+    relatedWork,
+    links,
+  } = caseStudy;
 
   return (
     <>
       {/* HERO SECTION */}
       <div className="relative py-12 md:py-20">
-        <div className="absolute top-0 left-0 z-0">
+        {/* <div className="absolute top-0 left-0 z-0">
           <div className="w-full h-[100px] md:h-[300px] ">
             <Image
               src="/images/dna.svg"
@@ -41,7 +50,7 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
               className="size-full object-contain"
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="relative z-10 flex flex-col items-center text-center gap-6 md:gap-8 2xl:gap-10 max-w-4xl mx-auto px-4">
           <div className="text-[#00C9A7]">
@@ -49,21 +58,21 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
               {title}
             </h5>
             <p className="text-xs md:text-base tracking-[6px] md:tracking-[11px] uppercase">
-              {subtitle}
+              Introduction
             </p>
           </div>
 
-          <div>
+          {/* <div>
             <p className="text-sm md:text-lg text-[#374151] leading-relaxed font-light">
               {introduction}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex md:flex-row flex-col container mx-auto md:py-16 py-6 md:gap-6 gap-5  2xl:px-0 md:px-16 px-6 items-center">
         <div className="w-full md:w-1/2 flex flex-col gap-4">
           <h3 className="text-3xl md:text-5xl font-bold text-[#00C9A7]">
-            Introduction
+            {subtitle}
           </h3>
           <p className="text-sm md:text-xl text-[#374151] leading-relaxed">
             {introduction}
@@ -136,7 +145,32 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         <h2 className="text-3xl md:text-5xl 2xl:text-[64px] font-bold text-[#00C9A7] text-center mb-12 md:mb-16">
           Core Features
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-9 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-9">
+          {coreFeatures.map((feature, index) => {
+            const isLast = index === coreFeatures.length - 1;
+            const isOdd = coreFeatures.length % 2 !== 0;
+
+            return (
+              <div
+                key={index}
+                className={`
+          bg-white text-center p-6 md:p-8 border-t-4 border-[#00C9A7]
+          shadow-[0px_4px_60px_0px_#04060F14]
+          ${isLast && isOdd ? "md:col-span-2 md:max-w-[500px] md:mx-auto" : ""}
+        `}
+              >
+                <h3 className="text-lg md:text-xl font-bold text-[#6E7885] mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-sm md:text-base text-[#6B7280] leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-9 ">
           {coreFeatures.map((feature, index) => (
             <div
               key={index}
@@ -150,7 +184,7 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className=" relative">
         {allData.map((item, index) => (
@@ -208,4 +242,3 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
     </>
   );
 }
-
