@@ -15,6 +15,8 @@ type PageProps = {
 export default async function CaseStudyDetailPage({ params }: PageProps) {
   const { slug } = await params;
 
+  console.log("slug coming in params", slug)
+
   if (!slug) {
     notFound();
   }
