@@ -6,7 +6,7 @@ import GetStarted from "@/components/-webComponents/GetStarted";
 import { getIndustryBySlug } from "@/data/industries";
 import { notFound } from "next/navigation";
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 type PageProps = {
   params: Promise<{

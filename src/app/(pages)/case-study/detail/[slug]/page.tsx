@@ -4,7 +4,7 @@ import GetStarted from "@/components/-webComponents/GetStarted";
 import { getCaseStudyBySlug } from "@/data/caseStudies";
 import { notFound } from "next/navigation";
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 type PageProps = {
   params: Promise<{
