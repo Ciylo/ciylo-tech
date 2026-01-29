@@ -8,6 +8,14 @@ import { notFound } from "next/navigation";
 
 export const dynamicParams = false;
 
+export async function generateStaticParams() {
+  const { industryDetails } = await import("@/data/industries");
+  
+  return industryDetails.map((industry) => ({
+    slug: industry.slug,
+  }));
+}
+
 type PageProps = {
   params: Promise<{
     slug: string;
