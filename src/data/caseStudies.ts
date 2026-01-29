@@ -39,43 +39,43 @@ export const caseStudyCards: CaseStudyCard[] = [
   // Energy
   {
     id: 1,
-    slug: "binford-ltd",
+    slug: "callcom",
     category: "energy",
-    logo: "/images/Binford Ltd..svg",
-    title: "Binford Ltd.",
+    logo: "/images/case-callcom-logo.svg",
+    title: "CALLCOM",
     description:
-      "Fireside Pharmacy provides a complete digital solution for managing medications, allowing patients to easily order new prescriptions, request refills, transfer prescriptions from other pharmacies and track every order in real time.",
-    image: "/images/Galaxy Tab S8 Ultra.svg",
+      "Callcom is an Al powered calling platform that automates inbound and outbound phone calls using intelligent voice agents. It enables businesses to manage campaigns, handle conversations, book meetings and integrate with CRMS streamlining communication at scale.",
+    image: "/images/case-callcom-cover.svg",
   },
   {
     id: 2,
-    slug: "acme-co",
+    slug: "AI-MEDIK",
     category: "energy",
-    logo: "/images/Acme Co.svg",
-    title: "Acme Co.",
+    logo: "/images/case-ai-madic-logo.svg",
+    title: "AI MEDIK.",
     description:
-      "A revolutionary financial technology platform that empowers users with seamless banking experiences. Features include real-time transaction monitoring, AI-powered fraud detection, instant money transfers, and comprehensive financial analytics to help users make smarter financial decisions.",
-    image: "/images/Dell XPS.svg",
+      "AI Medik is a healthcare technology platform that uses AI to assess user reported symptoms and guide people toward appropriate care, while also enabling appointment scheduling and remote consultations with medical professionals. It bridges the gap between initial health concerns and professional medical support making healthcare more accessible, personalized and efficient without replacing real medical advice. ",
+    image: "/images/case-ai-madic-cover.svg",
   },
   {
     id: 3,
-    slug: "barone-llc",
+    slug: "verited",
     category: "energy",
-    logo: "/images/Barone LLC.svg",
-    title: "Barone LLC.",
+    logo: "/images/case-verited-logo.svg",
+    title: "VeritED",
     description:
-      "An intelligent business intelligence platform that transforms raw data into actionable insights. Leveraging advanced machine learning algorithms, it provides predictive analytics, automated reporting, and real-time visualization to drive data-driven decision making for modern enterprises.",
-    image: "/images/iPhone 15 Pro.svg",
+      "VeritEd is an online tutoring platform that connects students with qualified tutors for personalized, one-on-one learning. It provides tools for booking sessions, real-time communication, and virtual classrooms, making academic support flexible, secure, and accessible from anywhere. ",
+    image: "/images/verited-cover.svg",
   },
   {
     id: 4,
-    slug: "big-kahuna-burger-ltd",
+    slug: "mirra",
     category: "energy",
-    logo: "/images/Big Kahuna Burger Ltd.svg",
-    title: "Big Kahuna Burger Ltd.",
+    logo: "/images/case-mirra-logo.svg",
+    title: "MIRRA",
     description:
-      "A revolutionary financial technology platform that empowers users with seamless banking experiences. Features include real-time transaction monitoring, AI-powered fraud detection, instant money transfers, and comprehensive financial analytics to help users make smarter financial decisions.",
-    image: "/images/fsgyded.svg",
+      "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+    image: "/images/case-mirra-cover.svg",
   },
   {
     id: 5,
@@ -85,7 +85,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "Biffco Enterprises Ltd.",
     description:
       "An intelligent business intelligence platform that transforms raw data into actionable insights. Leveraging advanced machine learning algorithms, it provides predictive analytics, automated reporting, and real-time visualization to drive data-driven decision making for modern enterprises.",
-    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   // Pharma
   {
@@ -96,7 +97,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "MediCare Solutions",
     description:
       "A comprehensive pharmaceutical management platform that streamlines medication distribution, tracks inventory in real-time, and ensures compliance with healthcare regulations. Features include automated prescription processing, drug interaction alerts, and seamless integration with healthcare providers.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 7,
@@ -106,7 +108,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "PharmaTech Innovations",
     description:
       "An advanced clinical trial management system that accelerates drug development processes. The platform enables researchers to manage patient data, monitor trial progress, analyze results in real-time, and maintain regulatory compliance throughout the entire drug development lifecycle.",
-    image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 8,
@@ -116,7 +119,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "HealthBridge Pharmaceuticals",
     description:
       "A revolutionary telemedicine platform connecting patients with licensed pharmacists for virtual consultations. Features include prescription management, medication adherence tracking, automated refill reminders, and personalized health recommendations based on patient history and current medications.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 9,
@@ -126,7 +130,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "BioPharm Analytics",
     description:
       "An intelligent pharmaceutical supply chain management system that optimizes inventory levels, predicts demand fluctuations, and ensures timely delivery of critical medications. The platform uses AI-powered analytics to reduce waste, prevent stockouts, and maintain optimal storage conditions.",
-    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 10,
@@ -136,7 +141,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "VitaCare Pharmaceuticals",
     description:
       "A comprehensive patient medication management app that helps individuals track their prescriptions, set medication reminders, access drug information, and connect with healthcare providers. The platform includes features for managing multiple medications, tracking side effects, and sharing health data with doctors.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   // Health Care
   {
@@ -147,7 +153,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "MediHealth Pro",
     description:
       "A comprehensive healthcare management platform that connects patients with healthcare providers, manages medical records, schedules appointments, and provides telemedicine services. Features include secure messaging, prescription management, and health analytics.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 12,
@@ -157,7 +164,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "CareConnect Systems",
     description:
       "An innovative patient care coordination platform that streamlines communication between healthcare teams, tracks patient progress, and ensures continuity of care. The system includes features for care planning, medication management, and discharge planning.",
-    image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 13,
@@ -167,7 +175,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "HealthSync Platform",
     description:
       "A digital health platform that enables seamless integration of electronic health records across multiple healthcare providers. Features include real-time data synchronization, patient portal access, and advanced analytics for population health management.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 14,
@@ -177,7 +186,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "WellnessTracker",
     description:
       "A patient engagement platform that helps individuals manage their health and wellness journey. Features include symptom tracking, medication adherence monitoring, appointment reminders, and personalized health recommendations based on medical history.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   // Oil Company
   {
@@ -188,7 +198,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "PetroTech Solutions",
     description:
       "An advanced oil and gas management platform that optimizes drilling operations, monitors equipment performance, and ensures regulatory compliance. Features include real-time data analytics, predictive maintenance, and automated reporting for upstream operations.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 16,
@@ -198,7 +209,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "EnergyFlow Systems",
     description:
       "A comprehensive pipeline management system that monitors flow rates, detects leaks, and ensures safe transportation of oil and gas products. The platform includes features for maintenance scheduling, emergency response coordination, and compliance tracking.",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c8ca6e3b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1558618047-3c8c8ca6e3b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 17,
@@ -208,7 +220,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "RefineryMax",
     description:
       "An intelligent refinery operations platform that optimizes production processes, manages inventory, and ensures quality control. Features include process automation, real-time monitoring, and advanced analytics for maximizing efficiency and reducing operational costs.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 18,
@@ -218,7 +231,8 @@ export const caseStudyCards: CaseStudyCard[] = [
     title: "OilField Analytics",
     description:
       "A data-driven platform for oil field management that provides insights into production performance, reservoir analysis, and equipment optimization. The system includes features for well monitoring, production forecasting, and cost analysis to maximize field profitability.",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c8ca6e3b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+    image:
+      "https://images.unsplash.com/photo-1558618047-3c8c8ca6e3b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
 ];
 
@@ -227,70 +241,105 @@ export const caseStudyDetails: CaseStudyDetail[] = [
   // Energy - Binford Ltd.
   {
     id: 1,
-    slug: "binford-ltd",
+    slug: "callcom",
     category: "energy",
-    title: "BINFORD",
+    title: "CALLCOM",
     subtitle: "Introduction",
     introduction:
-      "Binford Ltd. is a leading energy solutions provider specializing in renewable energy technologies and smart grid management. Our comprehensive platform enables energy companies to optimize their operations, reduce costs, and improve sustainability through advanced analytics and automation.",
-    heroImage: "/images/fireside-1.svg",
+      "Callcom is an Al powered calling platform that automates inbound and outbound phone calls using intelligent voice agents. It enables businesses to manage campaigns, handle conversations, book meetings and integrate with CRMS streamlining communication at scale.",
+    heroImage: "/images/callcom-1.svg",
     allData: [
       {
-        title: "Energy Dashboard",
-        img: "/images/fireside-2.svg",
+        title: "Dashboard",
+        img: "/images/callcom-2.svg",
         reverse: false,
         description:
-          "The comprehensive dashboard provides energy managers with a centralized view of all power generation, consumption patterns, and grid status. With real-time monitoring and predictive analytics, users can optimize energy distribution and reduce waste.",
+          "Dashboard gives you a quick overview of total calls, minutes used, and appointments booked. It helps users monitor performance and track system usage at a glance.",
       },
       {
-        title: "Smart Grid Management",
-        img: "/images/fireside-3.svg",
+        title: "Campaign Configuration",
+        img: "/images/callcom-3.svg",
         reverse: true,
         description:
           "Advanced smart grid technology enables automated load balancing, demand response management, and integration of renewable energy sources. The system ensures optimal energy flow while maintaining grid stability and reliability.",
       },
       {
-        title: "Renewable Integration",
-        img: "/images/fireside-4.svg",
+        title: "Agent Creation",
+        img: "/images/callcom-4.svg",
         reverse: false,
         description:
-          "Seamlessly integrate solar, wind, and other renewable energy sources into the existing grid infrastructure. Real-time monitoring and forecasting help maximize renewable energy utilization while ensuring consistent power supply.",
+          "Callcom allows users to create AI calling agents by selecting a template and defining the agent’s name. It simplifies agent setup for inbound and outbound call handling. ",
       },
       {
-        title: "Analytics & Reporting",
-        img: "/images/fireside-5.svg",
+        title: "Voice Management",
+        img: "/images/callcom-5.svg",
         reverse: true,
         description:
-          "Comprehensive analytics platform provides insights into energy consumption patterns, cost optimization opportunities, and sustainability metrics. Automated reporting ensures stakeholders stay informed about performance and compliance.",
+          " Callcom allows users to select and manage AI voice profiles for calling agents. It supports multiple tones and languages to create natural and personalized call experiences or you can clone your voice too. ",
       },
       {
-        title: "Maintenance Management",
-        img: "/images/fireside-6.svg",
+        title: "Prospect Management  ",
+        img: "/images/callcom-6.svg",
         reverse: false,
         description:
-          "Predictive maintenance system monitors equipment health and schedules maintenance proactively. This reduces downtime, extends equipment lifespan, and ensures optimal performance of energy infrastructure.",
+          "Callcom manages contact lists for AI calling campaigns, allowing users to import, filter, and organize prospects. It ensures accurate targeting for inbound and outbound calls. ",
+      },
+      {
+        title: "Phone Number Management ",
+        img: "/images/callcom-7.svg",
+        reverse: true,
+        description:
+          "Callcom allows users to purchase or import phone numbers for AI agents to make and receive calls. It enables seamless connection with telephony providers for inbound and outbound calling. ",
+      },
+      {
+        title: "Meeting Scheduling",
+        img: "/images/callcom-8.svg",
+        reverse: false,
+        description:
+          "Callcom displays and manages meetings booked through AI calls using a calendar view. It helps users track appointments and availability efficiently. ",
+      },
+      {
+        title: "Integrations",
+        img: "/images/callcom-9.svg",
+        reverse: true,
+        description:
+          "Callcom connects the AI calling system with external tools like CRMs and calendars. It enables automated data syncing, lead management, and meeting scheduling across platforms. ",
+      },
+      {
+        title: "Plans & Subscriptions ",
+        img: "/images/callcom-10.svg",
+        reverse: false,
+        description:
+          "Callcom lets users choose subscription plans based on call minutes, features, and usage limits. It manages access to AI calling capabilities and system resources. ",
       },
     ],
     coreFeatures: [
       {
-        title: "Real-Time Energy Monitoring",
+        title: "Al Calling & Conversation Automation",
         description:
-          "Monitor energy generation, consumption, and grid status in real-time with advanced IoT sensors and data analytics.",
+          "Automated inbound and outbond calls with intelligent voice agents.",
       },
       {
-        title: "Smart Grid Automation",
-        description:
-          "Automated load balancing and demand response management ensure optimal energy distribution and grid stability.",
+        title: "Campaign Management",
+        description: "Define agent prompts, goals and conversation flows.",
       },
       {
-        title: "Renewable Energy Integration",
-        description:
-          "Seamlessly integrate and manage multiple renewable energy sources with intelligent forecasting and optimization.",
+        title: "Agent & Voice Control",
+        description: "Choose or clone voice personalities for calls.",
       },
       {
-        title: "Predictive Analytics",
+        title: "Prospect Management",
         description:
-          "AI-powered analytics predict energy demand, optimize operations, and identify cost-saving opportunities.",
+          "Import prospects  via CRM & CSV, organize, and target prospect contact lists for AI calling campaigns. ",
+      },
+      {
+        title: "Meeting & Appointment Tracking",
+        description:
+          "Calendar view for scheduled meetings booked through calls.",
+      },
+      {
+        title: "Third-Party Integrations",
+        description: "Sync with CRM tools, calendars, and other platforms. ",
       },
     ],
     relatedWork: [
@@ -310,63 +359,70 @@ export const caseStudyDetails: CaseStudyDetail[] = [
   // Energy - Acme Co.
   {
     id: 2,
-    slug: "acme-co",
+    slug: "AI-MEDIK",
     category: "energy",
-    title: "ACME",
+    title: "AI MEDIK",
     subtitle: "Introduction",
     introduction:
-      "Acme Co. revolutionizes the energy sector with cutting-edge financial technology solutions for energy trading and management. Our platform empowers energy companies with seamless transaction processing, real-time market analytics, and comprehensive financial tools.",
-    heroImage: "/images/fireside-1.svg",
+      "AI Medik is a healthcare technology platform that uses AI to assess user reported symptoms and guide people toward appropriate care, while also enabling appointment scheduling and remote consultations with medical professionals. It bridges the gap between initial health concerns and professional medical support making healthcare more accessible, personalized and efficient without replacing real medical advice. ",
+    heroImage: "/images/ai-madic-1.svg",
     allData: [
       {
-        title: "Energy Trading Platform",
-        img: "/images/fireside-2.svg",
+        title: "Dashboard",
+        img: "/images/ai-madic-2.svg",
         reverse: false,
         description:
-          "Advanced trading platform enables real-time energy market transactions with automated matching and settlement. Features include risk management, portfolio optimization, and compliance monitoring.",
+          "Clean dashboard screen showing today’s appointments, inbox messages, and shortcuts to AI sessions, doctors, health records, and appointments. ",
       },
       {
-        title: "Financial Analytics",
-        img: "/images/fireside-3.svg",
+        title: "Al Sessions",
+        img: "/images/ai-madic-3.svg",
         reverse: true,
         description:
-          "Comprehensive financial analytics provide insights into trading performance, market trends, and profitability. Real-time dashboards help traders make informed decisions and optimize their strategies.",
+          "In Ai Medik lets users start a new AI health session and view previous symptom analysis sessions, enabling quick AI-based health assessments. ",
       },
       {
-        title: "Transaction Management",
-        img: "/images/fireside-4.svg",
+        title: "Appointments",
+        img: "/images/ai-madic-4.svg",
         reverse: false,
         description:
-          "Streamlined transaction processing ensures fast and secure energy trading operations. Automated workflows reduce manual errors and improve operational efficiency.",
+          "A calendar view where users can see, track, and manage their medical appointments, with monthly navigation for scheduling and planning visits. ",
       },
       {
-        title: "Risk Assessment",
-        img: "/images/fireside-5.svg",
+        title: "My Doctors",
+        img: "/images/ai-madic-5.svg",
         reverse: true,
         description:
-          "AI-powered risk assessment tools analyze market conditions and portfolio exposure to help mitigate financial risks and ensure regulatory compliance.",
+          "It shows the doctors or physicians assigned to the user, allowing patients to easily view and manage their connected healthcare providers. ",
+      },
+      {
+        title: "Personal Health Information ",
+        img: "/images/ai-madic-5.svg",
+        reverse: false,
+        description:
+          "It allows users to enter and manage lifestyle, medical, radiology, and lab details such as sleep, diet, exercise, and stress levels to support accurate AI analysis and better care decisions. ",
       },
     ],
     coreFeatures: [
       {
-        title: "Real-Time Trading",
+        title: "Al-Powered Symptom Assessment",
         description:
-          "Execute energy trades in real-time with automated matching and instant settlement capabilities.",
+          "Users enter symptoms and health details, and Al provides preliminary insights and possible causes.",
       },
       {
-        title: "Market Analytics",
+        title: "Appointment Scheduling",
         description:
-          "Advanced analytics provide insights into market trends, pricing patterns, and trading opportunities.",
+          "Users can book appointments with relevant medical specialists directly.",
       },
       {
-        title: "Risk Management",
+        title: "Remote Consultations",
         description:
-          "Comprehensive risk assessment and mitigation tools ensure secure and compliant trading operations.",
+          "The platform supports virtual doctor visits, enabling patients to consult professionals online. ",
       },
       {
-        title: "Portfolio Optimization",
+        title: "Ai Transcription",
         description:
-          "AI-driven portfolio optimization helps maximize returns while minimizing risk exposure.",
+          "It would record and summarize each doctor-patient consultation and will be sent to both so it can used as a context for next follow up  ",
       },
     ],
     relatedWork: [
@@ -386,63 +442,63 @@ export const caseStudyDetails: CaseStudyDetail[] = [
   // Energy - Barone LLC
   {
     id: 3,
-    slug: "barone-llc",
+    slug: "verited",
     category: "energy",
-    title: "BARONE",
+    title: "VeritED",
     subtitle: "Introduction",
     introduction:
-      "Barone LLC provides intelligent business intelligence solutions for the energy sector, transforming raw operational data into actionable insights. Our platform leverages advanced machine learning to drive data-driven decision making for modern energy enterprises.",
-    heroImage: "/images/fireside-1.svg",
+      "VeritEd is an online tutoring platform that connects students with qualified tutors for personalized, one-on-one learning. It provides tools for booking sessions, real-time communication, and virtual classrooms, making academic support flexible, secure, and accessible from anywhere. ",
+    heroImage: "/images/verited-1.svg",
     allData: [
       {
-        title: "Data Analytics Dashboard",
-        img: "/images/fireside-2.svg",
+        title: "Dashboard",
+        img: "/images/verited-2.svg",
         reverse: false,
         description:
-          "Comprehensive analytics dashboard provides real-time insights into energy operations, performance metrics, and business KPIs. Customizable visualizations help stakeholders understand complex data at a glance.",
+          "Centralized control hub that gives users a real-time summary of their tutoring activity. It enables users to track sessions, monitor learning progress, manage tutors, view upcoming appointments, and access key actions like session requests.  ",
       },
       {
-        title: "Predictive Analytics",
-        img: "/images/fireside-3.svg",
+        title: "Communication",
+        img: "/images/verited-3.svg",
         reverse: true,
         description:
-          "Machine learning algorithms predict equipment failures, energy demand, and market trends. These predictions enable proactive decision-making and optimization of energy operations.",
+          "Real time communication between students and tutors through secure in-platform messaging. It allows users to discuss lessons, share updates, coordinate schedules, and quickly join live tutoring sessions. ",
       },
       {
-        title: "Automated Reporting",
-        img: "/images/fireside-4.svg",
+        title: "Booking & Scheduling",
+        img: "/images/verited-4.svg",
         reverse: false,
         description:
-          "Automated report generation saves time and ensures consistent, accurate reporting across all departments. Reports can be customized and scheduled for automatic delivery to stakeholders.",
+          "It allows users to schedule, view, and manage tutoring sessions through an integrated calendar. It helps students track upcoming appointments, plan sessions in advance, and avoid scheduling conflicts. ",
       },
       {
-        title: "Data Visualization",
-        img: "/images/fireside-5.svg",
+        title: "Classroom",
+        img: "/images/verited-5.svg",
         reverse: true,
         description:
-          "Advanced data visualization tools transform complex datasets into intuitive charts, graphs, and interactive dashboards that make it easy to identify trends and patterns.",
+          "BrainCert is integrated with Verited. When a class is about to start, it automatically switches to BrainCert, where the live session takes place with features like whiteboards, screen sharing, chat, and class recordings.",
       },
     ],
     coreFeatures: [
       {
-        title: "Business Intelligence",
+        title: "Tutor-Student Matching",
         description:
-          "Transform raw data into actionable insights with advanced analytics and machine learning algorithms.",
+          "Connects students with suitable tutors based on subject needs and availability.",
       },
       {
-        title: "Predictive Analytics",
+        title: "Virtual Classroom",
         description:
-          "AI-powered predictions help forecast demand, optimize operations, and prevent equipment failures.",
+          "Provides an online space for live tutoring sessions with real-time interaction.",
       },
       {
-        title: "Automated Reporting",
+        title: "Personalized Learning",
         description:
-          "Generate comprehensive reports automatically with customizable templates and scheduled delivery.",
+          "Offers one-on-one tutoring tailored to each student's academic goals and level.",
       },
       {
-        title: "Real-Time Visualization",
+        title: "Progress & Session Management",
         description:
-          "Interactive dashboards and visualizations provide instant insights into business performance and operations.",
+          "Helps users track sessions, learning activity, and overall engagement.",
       },
     ],
     relatedWork: [
@@ -462,34 +518,48 @@ export const caseStudyDetails: CaseStudyDetail[] = [
   // Energy - Big Kahuna Burger Ltd
   {
     id: 4,
-    slug: "big-kahuna-burger-ltd",
+    slug: "mirra",
     category: "energy",
-    title: "BIG KAHUNA",
-    subtitle: "Introduction",
+    title: "MIRRA",
+    subtitle: "Turn Ideas into AI Automation ",
     introduction:
-      "Big Kahuna Burger Ltd. delivers innovative energy solutions for commercial and industrial clients. Our platform provides comprehensive energy management tools that help businesses reduce costs, improve efficiency, and achieve sustainability goals.",
-    heroImage: "/images/fireside-1.svg",
+      "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+    heroImage: "/images/mirra-1.svg",
     allData: [
       {
-        title: "Energy Management",
-        img: "/images/fireside-2.svg",
+        title: "Agent Creation",
+        img: "/images/mirra-2.svg",
         reverse: false,
         description:
-          "Comprehensive energy management platform helps businesses monitor consumption, identify waste, and optimize energy usage across all facilities and operations.",
+          "Mirra allows users to build AI agents using visual workflows. You can define triggers add actions test the workflow, and publish the agent. ",
       },
       {
-        title: "Cost Optimization",
-        img: "/images/fireside-3.svg",
+        title: "Marketplace",
+        img: "/images/mirra-3.svg",
         reverse: true,
         description:
-          "Advanced analytics identify cost-saving opportunities through demand management, peak shaving, and energy efficiency improvements.",
+          "Mirra’s marketplace is where users can discover, explore and purchase AI agents built by Mirra. It allows you to quickly find ready made agents for automation, try new workflows or publish and sell your own agents to others. ",
       },
       {
-        title: "Sustainability Tracking",
-        img: "/images/fireside-4.svg",
+        title: "My Agents",
+        img: "/images/mirra-4.svg",
         reverse: false,
         description:
-          "Track and report on sustainability metrics including carbon footprint, renewable energy usage, and environmental impact to meet corporate sustainability goals.",
+          "In Mirra lets users manage, monitor and control their created AI agents. You can view active and inactive agents, enable or disable agents. ",
+      },
+      {
+        title: "Agent Training & Customization ",
+        img: "/images/mirra-5.svg",
+        reverse: true,
+        description:
+          "Mirra allows users to train and personalize AI agents by uploading documents or voice data. Agents learn from PDFs, text files or audio recordings to gain domain specific knowledge and communication style. ",
+      },
+      {
+        title: "Integrations",
+        img: "/images/mirra-6.svg",
+        reverse: false,
+        description:
+          "Mirra allows connections to user with popular tools and services like Gmail, Slack, Google Calendar, LinkedIn and more. ",
       },
     ],
     coreFeatures: [
@@ -507,6 +577,11 @@ export const caseStudyDetails: CaseStudyDetail[] = [
         title: "Sustainability Reporting",
         description:
           "Comprehensive sustainability metrics and reporting to track progress toward environmental goals.",
+      },
+      {
+        title: "Automated Optimization",
+        description:
+          "AI-powered optimization automatically adjusts energy usage to minimize costs while maintaining operations.",
       },
       {
         title: "Automated Optimization",
@@ -1453,7 +1528,9 @@ export const getCaseStudyById = (id: number): CaseStudyDetail | undefined => {
 };
 
 // Helper function to get case study by slug
-export const getCaseStudyBySlug = (slug: string): CaseStudyDetail | undefined => {
+export const getCaseStudyBySlug = (
+  slug: string
+): CaseStudyDetail | undefined => {
   return caseStudyDetails.find((study) => study.slug === slug);
 };
 
@@ -1463,4 +1540,3 @@ export const getCaseStudiesByCategory = (
 ): CaseStudyCard[] => {
   return caseStudyCards.filter((card) => card.category === category);
 };
-
