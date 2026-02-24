@@ -84,15 +84,15 @@ const Footer = () => {
         <div className="grid md:gap-10 gap-6 lg:grid-cols-6 md:grid-cols-3 grid-cols-2 items-start">
           <div className="flex flex-col gap-4">
             <Link href="/">
-            <div className="md:h-12 h-8 md:w-[146px] w-[100px]">
-              <Image
-                src="/images/footer-logo.svg"
-                alt="ciyloTech footer logo"
-                width={146}
-                height={48}
-                className="h-full w-full object-contain"
-              />
-            </div>
+              <div className="md:h-12 h-8 md:w-[146px] w-[100px]">
+                <Image
+                  src="/images/footer-logo.svg"
+                  alt="ciyloTech footer logo"
+                  width={146}
+                  height={48}
+                  className="h-full w-full object-contain"
+                />
+              </div>
             </Link>
             <div className="flex gap-4">
               {socialLinks.map((item) => (
@@ -112,7 +112,9 @@ const Footer = () => {
 
           {sections.map((section) => (
             <div key={section.title} className="flex flex-col md:gap-3 gap-2">
-              <h5 className="text-white md:text-2xl text-lg font-bold">{section.title}</h5>
+              <h5 className="text-white md:text-2xl text-lg font-bold">
+                {section.title}
+              </h5>
               {section.links.map((link) => (
                 <Link
                   key={link.label}
@@ -132,13 +134,27 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} CiyloTech. All rights reserved.
           </p>
         </div>
-        <div className="flex items-center gap-3">
-          <a href="tel:+12137877640">+1 (213) 787-7640</a>
-          <p className="text-white border-l border-[#616161] ps-3 text-sm">
-            <Link href="/privacy-policy" className={linkBaseClasses}>
-              Privacy Policy
+        <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1">
+            <Icon icon="mdi:phone" className="text-xl md:text-2xl shrink-0" />
+            <a
+              target="_blank"
+              href="tel:+923016475925"
+              className="text-sm md:text-base"
+            >
+              +923016475925
+            </a>
+          </div>
+          <Icon icon="pepicons-pop:line-y" />
+          <div className="flex items-center gap-1">
+            <Icon icon="mdi:email" className="text-xl md:text-2xl shrink-0" />
+            <Link
+              href="mailto:noraiz@ciylo.com"
+              className="text-sm md:text-base wrap-break-word"
+            >
+              noraiz@ciylo.com
             </Link>
-          </p>
+          </div>
         </div>
       </div>
     </section>

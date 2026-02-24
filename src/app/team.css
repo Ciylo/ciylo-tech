@@ -1,0 +1,296 @@
+/* ─── Google Fonts Import ─────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap");
+
+/* ─── CSS Variables ───────────────────────────────────────────────────────── */
+:root {
+  --ink: #0b0d11;
+  --paper: #f5f2ec;
+  --accent: #1a6b4a;
+  --accent-light: #2d9e6f;
+  --gold: #c9a84c;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+}
+
+/* ─── Section Wrapper ─────────────────────────────────────────────────────── */
+.team-section {
+  position: relative;
+  /* background: var(--paper); */
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  overflow: hidden;
+}
+
+/* Grain texture overlay */
+.team-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.team-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px 120px;
+}
+
+/* ─── Label ───────────────────────────────────────────────────────────────── */
+.team-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.team-label::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ─── Heading ─────────────────────────────────────────────────────────────── */
+.team-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  max-width: 560px;
+  margin-bottom: 20px;
+}
+
+.team-heading em {
+  font-style: italic;
+  color: #00c9a7;
+}
+
+/* ─── Intro Text ──────────────────────────────────────────────────────────── */
+.team-intro {
+  max-width: 680px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--muted);
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+
+/* ─── Divider ─────────────────────────────────────────────────────────────── */
+.team-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+  margin-bottom: 80px;
+  opacity: 0.3;
+}
+
+/* ─── Cards Grid ──────────────────────────────────────────────────────────── */
+.team-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .team-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .team-inner {
+    padding: 60px 20px 80px;
+  }
+}
+
+/* ─── Card ────────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--card-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s ease;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Top accent bar */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* ─── Photo Wrap ──────────────────────────────────────────────────────────── */
+.card-photo-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(20%);
+  transition:
+    filter 0.5s ease,
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .card-photo {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+/* ─── Role Badge ──────────────────────────────────────────────────────────── */
+.role-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* ─── Card Body ───────────────────────────────────────────────────────────── */
+.card-body {
+  padding: 32px 36px 40px;
+}
+
+.dept-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.card-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+/* ─── Card Title ──────────────────────────────────────────────────────────── */
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.card-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.25;
+}
+
+/* ─── Card Description ────────────────────────────────────────────────────── */
+.card-desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #4b5563;
+  font-weight: 300;
+}
+
+/* ─── Card Footer ─────────────────────────────────────────────────────────── */
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #f0ede8;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  flex-shrink: 0;
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+.card:nth-child(2) .dot {
+  animation-delay: 1.2s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+}
+
+.dot-label {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}

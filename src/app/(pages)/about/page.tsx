@@ -3,6 +3,7 @@ import { Button, Col, Row } from "antd";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import GetStarted from "@/components/-webComponents/GetStarted";
+import TeamSection from "./team";
 export default function AboutPage() {
   const services = [
     {
@@ -153,7 +154,9 @@ export default function AboutPage() {
             <div className="flex flex-col 2xl:gap-7 md:gap-5 gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-7 h-[2px] rounded-full bg-[#00C9A7]" />
-                <span className="2xl:text-xs md:text-sm text-xs font-bold text-black">About Us</span>
+                <span className="2xl:text-xs md:text-sm text-xs font-bold text-black">
+                  About Us
+                </span>
               </div>
               <h5 className="2xl:text-[66px] md:text-[46px] text-3xl   font-semibold text-[#000000] leading-none">
                 {" "}
@@ -165,22 +168,36 @@ export default function AboutPage() {
 
             <div className="flex 2xl:max-w-4xl justify-between  md:gap-0 gap-4 md:max-w-2xl max-w-full">
               <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#434343] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">200+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Projects Shipped</span>
+                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">
+                  200+
+                </span>
+                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">
+                  Projects Shipped
+                </span>
               </div>
               <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#00C9A7] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">6+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Years Running</span>
+                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">
+                  6+
+                </span>
+                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">
+                  Years Running
+                </span>
               </div>
               <div className="w-1/3 md:border-l-4 border-l-2 2xl:ps-7 ps-4 border-[#434343] h-full flex flex-col gap-1">
-                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">50+</span>
-                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">Happy Clients</span>
+                <span className="2xl:text-[40px] md:text-2xl text-xl font-normal text-[#434343]">
+                  50+
+                </span>
+                <span className="2xl:text-xs md:text-sm text-xs text-[#4B5563]">
+                  Happy Clients
+                </span>
               </div>
             </div>
 
             <p className="2xl:text-2xl md:text-xl text-base 2xl:leading-relaxed md:leading-relaxed leading-normal font-light text-[#000000]">
-              A software company that turns ambitious ideas into <br className="2xl:block md:block hidden" />{" "}
-              scalable, user-centered digital products. <br className="2xl:block md:block hidden" /> No fluff, just
+              A software company that turns ambitious ideas into{" "}
+              <br className="2xl:block md:block hidden" /> scalable,
+              user-centered digital products.{" "}
+              <br className="2xl:block md:block hidden" /> No fluff, just
               results.
             </p>
           </div>
@@ -233,6 +250,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      {/* -----------teams----------- */}
+      <TeamSection />
 
       {/* Mission and Vision Section */}
       <section className=" bg-linear-to-r from-[#C0F6ED40] md:py-0 py-8 via-[#C0F6ED73] to-[#A8E8DC] ">
@@ -246,8 +265,9 @@ export default function AboutPage() {
               Mission
             </h3>
             <p className="2xl:text-base md:text-lg text-base text-[#374151] leading-relaxed">
-              Empower businesses with software that drives real growth. <br className="2xl:block md:block hidden" />{" "}
-              We cut through complexity to deliver solutions that work.
+              Empower businesses with software that drives real growth.{" "}
+              <br className="2xl:block md:block hidden" /> We cut through
+              complexity to deliver solutions that work.
             </p>
           </div>
 
@@ -260,8 +280,9 @@ export default function AboutPage() {
               Vision
             </h3>
             <p className="2xl:text-base md:text-lg text-base text-[#374151] leading-relaxed">
-              Be the partner that turns ideas into products people love. <br className="2xl:block md:block hidden" />{" "}
-              Build long-term relationships, not just projects.
+              Be the partner that turns ideas into products people love.{" "}
+              <br className="2xl:block md:block hidden" /> Build long-term
+              relationships, not just projects.
             </p>
           </div>
         </div>
@@ -334,7 +355,8 @@ export default function AboutPage() {
           <Row gutter={[16, 24]} align="middle" justify="space-between">
             <Col md={11} xs={24}>
               <h6 className="2xl:text-[52px] md:text-3xl text-2xl font-bold  md:mb-8 mb-4 text-[#000000]">
-                Numbers That <br className="2xl:block md:block hidden" /> Tell Our <br className="2xl:hidden md:hidden block" /> Story
+                Numbers That <br className="2xl:block md:block hidden" /> Tell
+                Our <br className="2xl:hidden md:hidden block" /> Story
               </h6>
               <p className="2xl:text-lg md:text-base text-sm md:mb-4 mb-2 font-normal text-[#4B5563]">
                 Six years of building software for startups, scale-ups, and
@@ -447,11 +469,11 @@ export default function AboutPage() {
             />
           </div>
           <div className="flex justify-center">
-          <Button
-          iconPlacement="end"
-          icon={<Icon icon="ci:arrow-up-right-md" />}
-            type="primary"
-            className="bg-[#000000]! md:min-w-[258px]! min-w-[150px]! md:h-14! h-10! rounded-none! hover:bg-[#000000]/80! text-white px-8 py-4 text-[16px] font-bold!"
+            <Button
+              iconPlacement="end"
+              icon={<Icon icon="ci:arrow-up-right-md" />}
+              type="primary"
+              className="bg-[#000000]! md:min-w-[258px]! min-w-[150px]! md:h-14! h-10! rounded-none! hover:bg-[#000000]/80! text-white px-8 py-4 text-[16px] font-bold!"
             >
               Get in Touch
             </Button>
