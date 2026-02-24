@@ -23,7 +23,7 @@ export default function TeamSection() {
       department: "CPO",
       description:
         "Led by Chief Product Officer Tosin Omolewu, a Fortune 10 product executive with over two decades of experience driving large-scale platform transformation across Amazon, Microsoft, Comcast, and healthcare, Ciylo applies enterprise-grade product strategy and operational discipline to modern clinical systems.",
-      image: "/images/tosin.jpeg",
+      image: "/images/Tosin.jpeg",
       email: "tosin@ciylo.tech",
     },
   ];
