@@ -86,7 +86,7 @@ export default function TeamSection() {
                     </p>
                   </div>
 
-                  <p className="text-gray-600 md:text-normal text-xs text-center leading-relaxed mb-6">
+                  <p className="text-gray-600 md:text-base text-sm text-center leading-relaxed mb-6">
                     {member.description}
                   </p>
 
