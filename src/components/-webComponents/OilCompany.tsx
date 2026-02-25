@@ -3,11 +3,10 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Row } from "antd";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { getCaseStudiesByCategory } from "@/data/caseStudies";
 
 export default function OilCompany() {
   const router = useRouter();
-  const cardData = getCaseStudiesByCategory("oil");
+  const cardData: { id: number; slug: string; category: string; logo: string; title: string; description: string; image: string; }[] = [];
 
   const handleCardClick = (slug: string) => {
     router.push(`/case-study/detail/${slug}`);
@@ -15,7 +14,7 @@ export default function OilCompany() {
 
   return (
     <>
-      {cardData.map((card, index) => (
+      {cardData.map((card) => (
         <div key={card.id}>
           <div className="border md:p-12 md:pe-2! p-6 md:mb-12 mb-6 md:rounded-3xl! rounded-lg! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
             <Row gutter={[24, 16]} align="middle">

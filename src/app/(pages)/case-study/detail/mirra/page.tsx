@@ -1,39 +1,93 @@
 import React from "react";
 import Image from "next/image";
 import GetStarted from "@/components/-webComponents/GetStarted";
-import { getCaseStudyBySlug } from "@/data/caseStudies";
-import { notFound } from "next/navigation";
 
-export const dynamicParams = false;
 
-export async function generateStaticParams() {
-  const { caseStudyDetails } = await import("@/data/caseStudies");
-  
-  return caseStudyDetails.map((study) => ({
-    slug: study.slug,
-  }));
-}
 
-type PageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export default async function CaseStudyDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-
-  console.log("slug coming in params", slug)
-
-  if (!slug) {
-    notFound();
-  }
-
-  const caseStudy = getCaseStudyBySlug(slug);
-
-  if (!caseStudy) {
-    notFound();
-  }
+export default function CaseStudyDetailPage() {
+  const caseStudy = {
+    "id": 4,
+    "slug": "mirra",
+    "category": "energy",
+    "title": "MIRRA",
+    "subtitle": "Turn Ideas into AI Automation ",
+    "introduction": "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+    "heroImage": "/images/mirra-1.svg",
+    "allData": [
+      {
+        "title": "Agent Creation",
+        "img": "/images/mirra-2.svg",
+        "reverse": false,
+        "description": "Mirra allows users to build AI agents using visual workflows. You can define triggers add actions test the workflow, and publish the agent. "
+      },
+      {
+        "title": "Marketplace",
+        "img": "/images/mirra-3.svg",
+        "reverse": true,
+        "description": "Mirra’s marketplace is where users can discover, explore and purchase AI agents built by Mirra. It allows you to quickly find ready made agents for automation, try new workflows or publish and sell your own agents to others. "
+      },
+      {
+        "title": "My Agents",
+        "img": "/images/mirra-4.svg",
+        "reverse": false,
+        "description": "In Mirra lets users manage, monitor and control their created AI agents. You can view active and inactive agents, enable or disable agents. "
+      },
+      {
+        "title": "Agent Training & Customization ",
+        "img": "/images/mirra-5.svg",
+        "reverse": true,
+        "description": "Mirra allows users to train and personalize AI agents by uploading documents or voice data. Agents learn from PDFs, text files or audio recordings to gain domain specific knowledge and communication style. "
+      },
+      {
+        "title": "Integrations",
+        "img": "/images/mirra-6.svg",
+        "reverse": false,
+        "description": "Mirra allows connections to user with popular tools and services like Gmail, Slack, Google Calendar, LinkedIn and more. "
+      }
+    ],
+    "coreFeatures": [
+      {
+        "title": "Energy Monitoring",
+        "description": "Real-time monitoring of energy consumption across all facilities with detailed analytics and reporting."
+      },
+      {
+        "title": "Cost Management",
+        "description": "Identify and implement cost-saving strategies through demand management and efficiency optimization."
+      },
+      {
+        "title": "Sustainability Reporting",
+        "description": "Comprehensive sustainability metrics and reporting to track progress toward environmental goals."
+      },
+      {
+        "title": "Automated Optimization",
+        "description": "AI-powered optimization automatically adjusts energy usage to minimize costs while maintaining operations."
+      },
+      {
+        "title": "Automated Optimization",
+        "description": "AI-powered optimization automatically adjusts energy usage to minimize costs while maintaining operations."
+      }
+    ],
+    "relatedWork": [
+      {
+        "logo": "/images/Related-1.svg",
+        "title": "Defigram",
+        "description": "Social app for chat and stories."
+      },
+      {
+        "logo": "/images/Related-2.svg",
+        "title": "Frogbase",
+        "description": "An AI based model training platform."
+      }
+    ],
+    "links": [
+      "Instagram",
+      "Dribbble",
+      "Linkedin",
+      "Github",
+      "Upwork",
+      "Figma"
+    ]
+  };
 
   const {
     title,
@@ -200,9 +254,8 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         {allData.map((item, index) => (
           <div
             key={index}
-            className={`container mx-auto 2xl:px-0 md:gap-10 gap-6 md:px-16 px-4 py-12 md:py-4 flex flex-col ${
-              item.reverse ? "md:flex-row-reverse" : "md:flex-row"
-            } items-center gap-10`}
+            className={`container mx-auto 2xl:px-0 md:gap-10 gap-6 md:px-16 px-4 py-12 md:py-4 flex flex-col ${item.reverse ? "md:flex-row-reverse" : "md:flex-row"
+              } items-center gap-10`}
           >
             <div className="w-full md:w-1/2 flex flex-col gap-4">
               <h3 className="text-3xl md:text-5xl font-bold text-[#00C9A7]">

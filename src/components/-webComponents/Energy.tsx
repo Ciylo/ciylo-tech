@@ -3,11 +3,47 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Row } from "antd";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { getCaseStudiesByCategory } from "@/data/caseStudies";
 
 export default function Energy() {
   const router = useRouter();
-  const cardData = getCaseStudiesByCategory("energy");
+  const cardData = [
+    {
+      "id": 1,
+      "slug": "callcom",
+      "category": "energy",
+      "logo": "/images/case-callcom-logo.svg",
+      "title": "CALLCOM",
+      "description": "Callcom is an Al powered calling platform that automates inbound and outbound phone calls using intelligent voice agents. It enables businesses to manage campaigns, handle conversations, book meetings and integrate with CRMS streamlining communication at scale.",
+      "image": "/images/case-callcom-cover.svg"
+    },
+    {
+      "id": 2,
+      "slug": "AI-MEDIK",
+      "category": "energy",
+      "logo": "/images/case-ai-madic-logo.svg",
+      "title": "AI MEDIK.",
+      "description": "AI Medik is a healthcare technology platform that uses AI to assess user reported symptoms and guide people toward appropriate care, while also enabling appointment scheduling and remote consultations with medical professionals. It bridges the gap between initial health concerns and professional medical support making healthcare more accessible, personalized and efficient without replacing real medical advice. ",
+      "image": "/images/case-ai-madic-cover.svg"
+    },
+    {
+      "id": 3,
+      "slug": "verited",
+      "category": "energy",
+      "logo": "/images/case-verited-logo.svg",
+      "title": "VeritED",
+      "description": "VeritEd is an online tutoring platform that connects students with qualified tutors for personalized, one-on-one learning. It provides tools for booking sessions, real-time communication, and virtual classrooms, making academic support flexible, secure, and accessible from anywhere. ",
+      "image": "/images/verited-cover.svg"
+    },
+    {
+      "id": 4,
+      "slug": "mirra",
+      "category": "energy",
+      "logo": "/images/case-mirra-logo.svg",
+      "title": "MIRRA",
+      "description": "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+      "image": "/images/case-mirra-cover.svg"
+    }
+  ];
 
   const handleCardClick = (slug: string) => {
     router.push(`/case-study/detail/${slug}`);
@@ -15,7 +51,7 @@ export default function Energy() {
 
   return (
     <>
-      {cardData.map((card, index) => (
+      {cardData.map((card) => (
         <div key={card.id}>
           <div className="border md:p-12 md:pe-2! p-6 md:mb-12 mb-6 md:rounded-3xl! rounded-lg! border-[#C0F6ED80] bg-[#FFFFFF] shadow-[0px_4px_60px_0px_#04060F14] ">
             <Row gutter={[24, 16]} align="middle">
@@ -48,7 +84,7 @@ export default function Energy() {
                 </div>
               </Col>
               <Col md={12} xs={24}>
-                <div className="w-auto 2xl:h-[550px] md:h-[250px] h-[150px] ">
+                <div className="w-auto 2xl:h-[550px] md:h-[450px] h-[248px] ">
                   <Image
                     src={card.image}
                     alt={card.title}

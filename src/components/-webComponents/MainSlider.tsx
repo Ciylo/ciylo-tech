@@ -17,76 +17,36 @@ type CardData = {
 const cardData: CardData[] = [
   {
     id: 1,
-    slug: "medicare-solutions",
-    logo: "/images/fireside.svg",
-    title: "Fire Side Ciylo Copy",
-    description:
-      "Fireside Pharmacy provides a complete digital solution for managing medications, allowing patients to easily order new prescriptions, request refills, transfer prescriptions from other pharmacies and track every order in real time.",
-    image: "/images/featured-images.webp",
+    slug: "callcom",
+    logo: "/images/case-callcom-logo.svg",
+    title: "CALLCOM",
+    description: "Callcom is an Al powered calling platform that automates inbound and outbound phone calls using intelligent voice agents. It enables businesses to manage campaigns, handle conversations, book meetings and integrate with CRMS streamlining communication at scale.",
+    image: "/images/case-callcom-cover.svg"
   },
   {
     id: 2,
-    slug: "acme-co",
-    logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&q=90",
-    title: "FinTech Banking Platform",
-    description:
-      "A revolutionary financial technology platform that empowers users with seamless banking experiences. Features include real-time transaction monitoring, AI-powered fraud detection, instant money transfers, and comprehensive financial analytics to help users make smarter financial decisions.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=1080&fit=crop&q=95",
+    slug: "AI-MEDIK",
+    logo: "/images/case-ai-madic-logo.svg",
+    title: "AI MEDIK.",
+    description: "AI Medik is a healthcare technology platform that uses AI to assess user reported symptoms and guide people toward appropriate care, while also enabling appointment scheduling and remote consultations with medical professionals.",
+    image: "/images/case-ai-madic-cover.svg"
   },
   {
     id: 3,
-    slug: "barone-llc",
-    logo: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=200&fit=crop&q=90",
-    title: "AI-Powered Analytics Dashboard",
-    description:
-      "An intelligent business intelligence platform that transforms raw data into actionable insights. Leveraging advanced machine learning algorithms, it provides predictive analytics, automated reporting, and real-time visualization to drive data-driven decision making for modern enterprises.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop&q=95",
+    slug: "verited",
+    logo: "/images/case-verited-logo.svg",
+    title: "VeritED",
+    description: "VeritEd is an online tutoring platform that connects students with qualified tutors for personalized, one-on-one learning. It provides tools for booking sessions, real-time communication, and virtual classrooms, making academic support flexible, secure, and accessible from anywhere. ",
+    image: "/images/verited-cover.svg"
   },
   {
     id: 4,
-    slug: "big-kahuna-burger-ltd",
-    logo: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=200&fit=crop&q=90",
-    title: "Big Kahuna Burger Ltd.",
-    description:
-      "A revolutionary financial technology platform that empowers users with seamless banking experiences. Features include real-time transaction monitoring, AI-powered fraud detection, instant money transfers, and comprehensive financial analytics to help users make smarter financial decisions.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&h=1080&fit=crop&q=95",
-  },
-  {
-    id: 5,
-    slug: "biffco-enterprises-ltd",
-    logo: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=200&fit=crop&q=90",
-    title: "Biffco Enterprises Ltd.",
-    description:
-      "An intelligent business intelligence platform that transforms raw data into actionable insights. Leveraging advanced machine learning algorithms, it provides predictive analytics, automated reporting, and real-time visualization to drive data-driven decision making for modern enterprises.",
-    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 6,
-    slug: "binford-ltd",
-    logo: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.1.0",
-    title: "Binford Ltd.",
-    description:
-      "Binford Ltd. is a leading energy solutions provider specializing in renewable energy technologies and smart grid management. Our comprehensive platform enables energy companies to optimize their operations, reduce costs, and improve sustainability through advanced analytics and automation.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
-  },
-  {
-    id: 7,
-    slug: "pharmatech-innovations",
-    logo: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.1.0",
-    title: "PharmaTech Innovations",
-    description:
-      "An advanced clinical trial management system that accelerates drug development processes. The platform enables researchers to manage patient data, monitor trial progress, analyze results in real-time, and maintain regulatory compliance throughout the entire drug development lifecycle.",
-    image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
-  },
-  {
-    id: 8,
-    slug: "healthbridge-pharmaceuticals",
-    logo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.1.0",
-    title: "HealthBridge Pharmaceuticals",
-    description:
-      "A revolutionary telemedicine platform connecting patients with licensed pharmacists for virtual consultations. Features include prescription management, medication adherence tracking, automated refill reminders, and personalized health recommendations based on patient history and current medications.",
-    image: "/images/imagePharmaceuticals.png",
-  },
+    slug: "mirra",
+    logo: "/images/case-mirra-logo.svg",
+    title: "MIRRA",
+    description: "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+    image: "/images/case-mirra-cover.svg"
+  }
 ];
 
 function MainSlider() {
@@ -159,7 +119,7 @@ function MainSlider() {
 
   return (
     <div
-      className="swipe-container 2xl:min-h-[520px] md:min-h-[500px] 2xl:px-0 md:px-16 px-6 min-h-[550px] relative"
+      className="swipe-container 2xl:min-h-[520px] md:min-h-[500px] 2xl:px-0 md:px-16 px-6 md:min-h-[550px] min-h-[590px] relative"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -189,8 +149,8 @@ function MainSlider() {
             onClick={() => handleCardClick(card.slug)}
           >
             <div className="swipe-card">
-              <Row gutter={[24,24]} align="middle">
-                <Col md={10}>
+              <Row gutter={[24, 24]} align="middle">
+                <Col xs={24} md={10}>
                   <div className="flex flex-col items-start gap-4 md:gap-7">
                     <div className="w-auto h-11">
                       <Image
@@ -219,16 +179,12 @@ function MainSlider() {
                     </Button>
                   </div>
                 </Col>
-                <Col md={14}>
-                  <div className="w-auto rounded-md! md:h-[338px] h-[200px]">
-                    <Image
+                <Col xs={24} md={14}>
+                  <div className="md:w-[550px] w-full rounded-md! md:h-[400px] h-[250px]">
+                    <img
                       src={card.image}
                       alt={card.title}
-                      width={1200}
-                      height={800}
-                      className="size-full rounded-md! select-none"
-                      quality={95}
-                      unoptimized
+                      className="size-full rounded-md! object-cover select-none"
                     />
                   </div>
                 </Col>

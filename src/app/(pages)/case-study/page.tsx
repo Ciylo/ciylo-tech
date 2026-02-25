@@ -8,13 +8,18 @@ import { Icon } from "@iconify/react/dist/iconify.cjs";
 import Energy from "@/components/-webComponents/Energy";
 import Pharma from "@/components/-webComponents/Pharma";
 import HealthCare from "@/components/-webComponents/HealthCare";
-import OilCompany from "@/components/-webComponents/OilCompany";
 import GetStarted from "@/components/-webComponents/GetStarted";
 
 const CaseStudyPage = () => {
-  const [activeTab, setActiveTab] = useState("energy"); // Updated initial state to match the first slug
+  const [activeTab, setActiveTab] = useState("ai");
 
   const tabs = [
+    {
+      key: "ai",
+      slug: "ai",
+      label: "AI",
+      children: <Energy />, // Reusing Energy component for the AI case studies
+    },
     {
       key: "energy",
       slug: "energy",
@@ -32,13 +37,7 @@ const CaseStudyPage = () => {
       slug: "health-care",
       label: "Health Care",
       children: <HealthCare />,
-    },
-    {
-      key: "oil-company",
-      slug: "oil-company",
-      label: "Oil company",
-      children: <OilCompany />,
-    },
+    }
   ];
 
   return (
