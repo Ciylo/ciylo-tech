@@ -6,7 +6,17 @@ import { useRouter } from "next/navigation";
 
 export default function HealthCare() {
   const router = useRouter();
-  const cardData: { id: number; slug: string; category: string; logo: string; title: string; description: string; image: string; }[] = [];
+  const cardData: { id: number; slug: string; category: string; logo: string; title: string; description: string; image: string; }[] = [
+    {
+      "id": 5,
+      "slug": "I-Hospice",
+      "category": "healthcare",
+      "logo": "/images/case-ihospice-logo.svg",
+      "title": "I-HOSPICE",
+      "description": "I-Hospice is a comprehensive hospice care management platform designed to streamline patient care coordination, scheduling and documentation for hospice agencies. It empowers caregivers, nurses and administrators to manage patient records, track visits, handle billing and ensure compliance all from a single unified system.",
+      "image": "/images/case-ihospice-cover.svg"
+    }
+  ];
 
   const handleCardClick = (slug: string) => {
     router.push(`/case-study/detail/${slug}`);

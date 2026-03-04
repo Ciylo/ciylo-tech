@@ -40,8 +40,17 @@ export default function Energy() {
       "category": "energy",
       "logo": "/images/case-mirra-logo.svg",
       "title": "MIRRA",
-      "description": "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don’t have to do everything manually. ",
+      "description": "Mirra is an AI powered platform where you can create and use smart AI agents to automate everyday tasks and workflows. These agents can connect with your tools, take actions for you and handle repetitive or time consuming work so you don't have to do everything manually. ",
       "image": "/images/case-mirra-cover.svg"
+    },
+    {
+      "id": 5,
+      "slug": "I-Hospice",
+      "category": "healthcare",
+      "logo": "/images/case-ihospice-logo.svg",
+      "title": "I-HOSPICE",
+      "description": "I-Hospice is a comprehensive hospice care management platform designed to streamline patient care coordination, scheduling and documentation for hospice agencies. It empowers caregivers, nurses and administrators to manage patient records, track visits, handle billing and ensure compliance all from a single unified system.",
+      "image": "/images/case-ihospice-cover.svg"
     }
   ];
 
