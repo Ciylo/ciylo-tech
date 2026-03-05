@@ -15,6 +15,15 @@ export default function HealthCare() {
       "title": "I-HOSPICE",
       "description": "I-Hospice is a comprehensive hospice care management platform designed to streamline patient care coordination, scheduling and documentation for hospice agencies. It empowers caregivers, nurses and administrators to manage patient records, track visits, handle billing and ensure compliance all from a single unified system.",
       "image": "/images/case-ihospice-cover.svg"
+    },
+    {
+      "id": 6,
+      "slug": "rize",
+      "category": "healthcare",
+      "logo": "/images/case-rize-logo.svg",
+      "title": "RIZE",
+      "description": "The smarter way to manage and rent property in Dubai. Keyper secured $40M in funding from leading VCs and asset managers. Owners can cash out rent anytime, tenants can pay monthly, and agents close deals faster.",
+      "image": "/images/case-rize-cover.svg"
     }
   ];
 

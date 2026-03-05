@@ -51,6 +51,15 @@ export default function Energy() {
       "title": "I-HOSPICE",
       "description": "I-Hospice is a comprehensive hospice care management platform designed to streamline patient care coordination, scheduling and documentation for hospice agencies. It empowers caregivers, nurses and administrators to manage patient records, track visits, handle billing and ensure compliance all from a single unified system.",
       "image": "/images/case-ihospice-cover.svg"
+    },
+    {
+      "id": 6,
+      "slug": "rize",
+      "category": "healthcare",
+      "logo": "/images/case-rize-logo.svg",
+      "title": "RIZE",
+      "description": "The smarter way to manage and rent property in Dubai. Keyper secured $40M in funding from leading VCs and asset managers. Owners can cash out rent anytime, tenants can pay monthly, and agents close deals faster.",
+      "image": "/images/case-rize-cover.svg"
     }
   ];
 
@@ -70,9 +79,9 @@ export default function Energy() {
                     <Image
                       src={card.logo}
                       alt={card.title}
-                      width={100}
-                      height={100}
-                      className="size-full object-contain"
+                      width={200}
+                      height={200}
+                      className="h-[50px] w-auto object-contain"
                     />
                   </div>
                   <h6 className="2xl:text-[32px] md:text-2xl text-xl font-bold text-[#424242]">
