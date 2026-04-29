@@ -128,19 +128,25 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="md:mt-8 mt-4 container mx-auto pb-4 md:flex-row flex-col gap-4 flex items-center justify-between text-sm text-[#212121]/80">
+      <div
+        className="md:mt-8 mt-4 container mx-auto pb-4 md:flex-row flex-col gap-4 flex items-center justify-between text-sm text-[#212121]/80"
+        itemScope
+        itemType="https://schema.org/LocalBusiness"
+      >
+        <meta itemProp="name" content="CiyloTech" />
         <div className="flex items-center gap-3">
           <p className="text-white text-sm">
             &copy; {new Date().getFullYear()} CiyloTech. All rights reserved.
           </p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center justify-center gap-1">
           <div className="flex items-center gap-1">
             <Icon icon="mdi:phone" className="text-xl md:text-2xl shrink-0" />
             <a
               target="_blank"
               href="tel:+923016475925"
               className="text-sm md:text-base"
+              itemProp="telephone"
             >
               +923016475925
             </a>
@@ -151,10 +157,25 @@ const Footer = () => {
             <Link
               href="mailto:noraiz@ciylo.com"
               className="text-sm md:text-base wrap-break-word"
+              itemProp="email"
             >
               noraiz@ciylo.com
             </Link>
           </div>
+          <Icon icon="pepicons-pop:line-y" />
+          <address
+            className="not-italic flex items-center gap-1"
+            itemProp="address"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
+          >
+            <Icon icon="mdi:map-marker" className="text-xl md:text-2xl shrink-0" />
+            <span className="text-sm md:text-base">
+              <span itemProp="streetAddress">9-A, Aitchison Society</span>,{" "}
+              <span itemProp="addressLocality">Lahore</span>,{" "}
+              <span itemProp="postalCode">53700</span>
+            </span>
+          </address>
         </div>
       </div>
     </section>
