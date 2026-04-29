@@ -47,7 +47,7 @@ const sections = [
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "/resources/blog" },
+      { label: "Blog", href: "/blog" },
       { label: "Case Studies", href: "/case-study" },
       { label: "Templates", href: "/resources/templates" },
     ],
