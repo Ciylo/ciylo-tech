@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import OurClients from "@/components/-webComponents/OurClients";
 import GetStarted from "@/components/-webComponents/GetStarted";
 import { Icon } from "@iconify/react";
 import { Button, Col, Row } from "antd";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Ciylo: Services",
+  description:
+    "Ciylo Pvt. Ltd. is a software company specializing in turning innovative ideas into powerful digital solutions. We help businesses streamline operations and solve complex challenges with custom-built software and AI-powered solutions. Our tailored approach ensures that each project, from engaging web and mobile apps to robust enterprise systems, is designed to help organizations scale with confidence",
+};
 type CardData = {
   id: number;
   title: string;

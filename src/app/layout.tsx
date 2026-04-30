@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "CiyloTech | Turning Your Ideas Into Scalable Digital Products – Web, Mobile & User-Centered Software Solutions",
+    "Ciylo: Turning Your Ideas Into Scalable Digital Products – Web, Mobile & User-Centered Software Solutions",
   description:
-    "ciyloTech is a software development company that specializes in turning your ideas into scalable digital products. We are a team of experienced developers who are dedicated to providing the best possible solutions for our clients.",
+    "Ciylo Pvt. Ltd. is a software company specializing in turning innovative ideas into powerful digital solutions. We help businesses streamline operations and solve complex challenges with custom-built software and AI-powered solutions. Our tailored approach ensures that each project, from engaging web and mobile apps to robust enterprise systems, is designed to help organizations scale with confidence",
   icons: {
     icon: "/images/ciylo-titleLogo.svg",
   },
